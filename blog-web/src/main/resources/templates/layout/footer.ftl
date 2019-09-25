@@ -117,7 +117,7 @@
                     </ul>
                 </p>
                 <p>托管于<a href="https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=wylo59db" target="_blank" title="阿里云-为了无法计算的价值" data-toggle="tooltip" data-placement="bottom" rel="external nofollow">阿里云</a> & <a href="https://portal.qiniu.com/signup?code=3l8yx2v0f21ci" target="_blank" title="七牛云-国内领先的企业级云服务商" data-toggle="tooltip" data-placement="bottom" rel="external nofollow">七牛云</a><#if config.recordNumber!> · <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank" title="查看备案信息" data-toggle="tooltip" data-placement="bottom" rel="external nofollow">${config.recordNumber}</a></#if></p>
-                <p><#if config.copyright!>${config.copyright} |</#if> Powered by <a href="https://gitee.com/yadong.zhang/DBlog" title="一款简洁美观、自适应的Java博客系统..." data-toggle="tooltip" data-placement="right" target="_blank"><i>OneBlog</i></a>  </p>
+                <p><#if config.copyright!>${config.copyright} |</#if> Powered by <a href="https://gitee.com/yiqijava" title="一款简洁美观、自适应的Java博客系统..." data-toggle="tooltip" data-placement="right" target="_blank"><i>shengdingbox</i></a>  </p>
                 <#if url?? && (url == "index")>
                     <div class="inline external-links">
                         <a>友情链接：</a>
@@ -139,15 +139,15 @@
     </div>
 </footer>
 <a class="to-top" title="点击返回顶部" data-toggle="tooltip" data-placement="bottom"></a>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@1.11.1/dist/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.0/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-lazyload@1.9.3/jquery.lazyload.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-confirm@3.3.2/dist/jquery-confirm.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrapvalidator@0.5.4/dist/js/bootstrapValidator.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/xss@0.3.3/dist/xss.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mustache@2.3.0/mustache.min.js"></script>
+<script type="text/javascript" src="${config.staticWebSite}/js/jquery.min.js"></script>
+<script type="text/javascript" src="${config.staticWebSite}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${config.staticWebSite}/js/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="${config.staticWebSite}/js/jquery-confirm.min.js"></script>
+<script type="text/javascript" src="${config.staticWebSite}/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="${config.staticWebSite}/js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="${config.staticWebSite}/js/nprogress.min.js"></script>
+<script type="text/javascript" src="${config.staticWebSite}/js/xss.min.js"></script>
+<script type="text/javascript" src="${config.staticWebSite}/js/mustache.min.js"></script>
 <script type="text/javascript">
     var appConfig = {
         siteName: '${config.siteName}',
