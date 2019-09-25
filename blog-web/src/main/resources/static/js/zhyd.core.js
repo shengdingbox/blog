@@ -102,7 +102,7 @@
                     reconnect: false
                 }, options);
                 if (!op.host) {
-                    // console.error("初始化WebSocket失败，无效的请求地址");
+                     console.error("初始化WebSocket失败，无效的请求地址");
                     return;
                 }
                 try {
@@ -448,7 +448,7 @@
             return this.each(function () {
                 var $box = $(this), flyId = 'effect-fly-' + (new Date().getTime());
 
-                var tpl = '<span id="#flyId#" class="effect-bubble-fly #class#" style="opacity: 1;top:#top#px;left:#left#px;font-size: #fontSize#rem;">#content#</span>';
+                var tpl = '<span id="#flyId#" class="effect-bubble-fly #class#" style="opacity: 1;top: #top#px;left: #left#px;font-size: #fontSize#rem;">#content#</span>';
                 var html = tpl.replaceAll('#left#', 12).replaceAll('#top#', -8)
                     .replaceAll('#flyId#', flyId).replaceAll('#content#', op.content)
                     .replaceAll('#class#', op.className).replaceAll('#fontSize#', op.fontSize);

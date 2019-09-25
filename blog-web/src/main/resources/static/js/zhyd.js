@@ -262,7 +262,7 @@ $(function () {
             }
         });
         // 默认取8085端口的程序
-        host = host || document.domain + ":8085";
+        host = host || document.domain + ":8088";
         if (host) {
             // 申请显示通知的权限
             $.notification.requestPermission();
