@@ -35,7 +35,7 @@
         <logger name="com.zhouzifei.blog" additivity="false">
             <appender-ref ref="STDOUT"/>
         </logger>
-        <root level="ERROR">
+        <root level="INFO">
             <appender-ref ref="STDOUT"/>
         </root>
     </springProfile>
@@ -47,7 +47,7 @@
             <appender-ref ref="FILE" />
         </logger>
 
-        <root level="WARN">
+        <root level="INFO">
             <appender-ref ref="STDOUT"/>
             <appender-ref ref="FILE" />
         </root>

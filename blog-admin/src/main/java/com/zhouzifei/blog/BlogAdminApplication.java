@@ -14,7 +14,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
  * @date 2019年7月16日
  * @since 1.0
  */
-@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
+@SpringBootApplication
 @ServletComponentScan
 public class BlogAdminApplication {
 
