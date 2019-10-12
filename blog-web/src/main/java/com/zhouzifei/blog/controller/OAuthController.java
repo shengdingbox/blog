@@ -5,8 +5,10 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +24,7 @@ import me.zhyd.oauth.model.AuthToken;
 import me.zhyd.oauth.request.AuthRequest;
 
 /**
- * 
+ *
  * @author Dabao (17611555590@163.com)
  * @version 1.0
  * @website https://www.zhouzifei.com
@@ -32,7 +34,9 @@ import me.zhyd.oauth.request.AuthRequest;
 @Controller
 @RequestMapping("/oauth")
 public class OAuthController {
-
+    /**
+     *
+     */
     @Autowired
     private AuthService authService;
 
@@ -53,6 +57,7 @@ public class OAuthController {
      */
     @RequestMapping("/callback/{source}")
     public ModelAndView login(@PathVariable("source") String source, String code, String auth_code, HttpSession session) {
+
         authService.login(source, code, auth_code);
         String historyUrl = (String) session.getAttribute("historyUrl");
         session.removeAttribute("historyUrl");

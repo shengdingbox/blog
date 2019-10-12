@@ -17,7 +17,7 @@
                     <ul class="list-unstyled">
                         <#list list as item>
                             <li>
-                                <i class="fa fa-thumbs-o-up"></i><a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="点击查看文章详情" data-toggle="tooltip" data-placement="bottom">${item.title}</a>
+                                <i class="fa fa-thumbs-o-up"></i><a href="${config.siteUrl}/article/${item.id?c}.html" rel="bookmark" title="点击查看文章详情" data-toggle="tooltip" data-placement="bottom">${item.title}</a>
                                 <span class="info">${item.createTime?string('yyyy/MM/dd')}</span>
                             </li>
                         </#list>

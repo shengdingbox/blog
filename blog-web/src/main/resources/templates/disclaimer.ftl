@@ -1,6 +1,6 @@
 <#include "include/macros.ftl">
 <@compress single_line=false>
-<@header title="免责声明 | ${config.siteName}" keywords="" description="免责声明" canonical="/disclaimer"></@header>
+<@header title="免责声明 | ${config.siteName}" keywords="" description="免责声明" canonical="/disclaimer.html"></@header>
 
 <div class="container custome-container">
     <nav class="breadcrumb">
@@ -15,7 +15,7 @@
                         <h1 class="disclaimer-title">
                             <strong>免责声明</strong>
                         </h1>
-                        <p>作者：<a href="${config.siteUrl}" title="网站作者">${config.authorName}</a>&nbsp;&nbsp;&nbsp;&nbsp; 发布时间：2018年3月16日</p>
+                        <p>作者：<a href="${config.siteUrl}.html" title="网站作者">${config.authorName}</a>&nbsp;&nbsp;&nbsp;&nbsp; 发布时间：2018年3月16日</p>
                     </div>
                     <div class="disclaimer-body">
                         <ul class="list-unstyled disclaimer-box">
