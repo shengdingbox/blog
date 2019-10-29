@@ -57,6 +57,7 @@
                             </#if>
 
                         </@zhydTag>
+                        <#--
                         <li>
                             <a href="${config.siteUrl}/oauth/render/gitee" target="">
                                 <img src="https://gitee.com/logo_icon.png" alt="" class="img-circle">
@@ -127,6 +128,7 @@
                                 <img src="https://gitee.com/yadong.zhang/static/raw/master/JustAuth/facebook.png" alt="">
                             </a>
                         </li>
+                        -->
 
                     </ul>
                     <div class="oauth-line">

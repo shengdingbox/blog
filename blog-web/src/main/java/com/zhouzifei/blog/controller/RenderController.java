@@ -110,7 +110,7 @@ public class RenderController {
     public ModelAndView type(@PathVariable("typeId") Long typeId, Model model) {
         ArticleConditionVO vo = new ArticleConditionVO();
         vo.setTypeId(typeId);
-        model.addAttribute("url", "type/" + typeId);
+        model.addAttribute("url", "type/" + typeId+".html");
         loadIndexPage(vo, model);
 
         return ResultUtil.view(INDEX_URL);
@@ -130,7 +130,7 @@ public class RenderController {
         ArticleConditionVO vo = new ArticleConditionVO();
         vo.setTypeId(typeId);
         vo.setPageNumber(pageNumber);
-        model.addAttribute("url", "type/" + typeId);
+        model.addAttribute("url", "type/" + typeId+".html");
         loadIndexPage(vo, model);
 
         return ResultUtil.view(INDEX_URL);
