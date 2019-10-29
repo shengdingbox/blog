@@ -172,12 +172,12 @@
                                     </a>
                                     <ul class="dropdown-menu" role="menu">
                                         <#list item.nodes as node>
-                                        <li><a href="/type/${node.id?c}" title="点击查看《${node.name!}》的文章">${node.name!}</a></li>
+                                        <li><a href="/type/${node.id?c}.html" title="点击查看《${node.name!}》的文章">${node.name!}</a></li>
                                         </#list>
                                     </ul>
                                 </li>
                             <#else>
-                                <li><a href="/type/${item.id?c}" class="menu_a"><i class="${item.icon!}"></i>${item.name!}</a></li>
+                                <li><a href="/type/${item.id?c}.html" class="menu_a"><i class="${item.icon!}"></i>${item.name!}</a></li>
                             </#if>
                         </#list>
                     </#if>

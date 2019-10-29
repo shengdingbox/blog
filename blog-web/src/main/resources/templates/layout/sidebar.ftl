@@ -58,7 +58,7 @@
         <@zhydTag method="tagsList" pageSize="10">
             <#if tagsList?? && (tagsList?size > 0)>
                 <#list tagsList as item>
-                    <a style="font-size: <@zhydTag method="random" max="15" min="10">${random}</@zhydTag>px;margin: 5px;" href="${config.siteUrl}/tag/${item.id?c}" title="${item.name!}" data-toggle="tooltip" data-placement="bottom">
+                    <a style="font-size: <@zhydTag method="random" max="15" min="10">${random}</@zhydTag>px;margin: 5px;" href="${config.siteUrl}/tag/${item.id?c}.html" title="${item.name!}" data-toggle="tooltip" data-placement="bottom">
                         ${item.name!}
                     </a>
                 </#list>
@@ -95,7 +95,7 @@
                         <#if recentArticles?? && (recentArticles?size > 0)>
                             <#list recentArticles as item>
                                 <li>
-                                    <a href="${config.siteUrl}/article/${item.id?c}" title="${item.title}" data-toggle="tooltip" data-placement="bottom">
+                                    <a href="${config.siteUrl}/article/${item.id?c}.html" title="${item.title}" data-toggle="tooltip" data-placement="bottom">
                                         <i class="fa fa-book fa-fw"></i> ${item.title}
                                     </a>
                                 </li>
@@ -114,7 +114,7 @@
                         <#if recommendedList?? && (recommendedList?size > 0)>
                             <#list recommendedList as item>
                                 <li>
-                                    <a href="${config.siteUrl}/article/${item.id?c}" title="${item.title}" data-toggle="tooltip" data-placement="bottom">
+                                    <a href="${config.siteUrl}/article/${item.id?c}.html" title="${item.title}" data-toggle="tooltip" data-placement="bottom">
                                         <i class="fa fa-book fa-fw"></i> ${item.title}
                                     </a>
                                 </li>
@@ -133,7 +133,7 @@
                         <#if randomList?? && (randomList?size > 0)>
                             <#list randomList as item>
                                 <li>
-                                    <a href="${config.siteUrl}/article/${item.id?c}" title="${item.title}" data-toggle="tooltip" data-placement="bottom">
+                                    <a href="${config.siteUrl}/article/${item.id?c}.html" title="${item.title}" data-toggle="tooltip" data-placement="bottom">
                                         <i class="fa fa-book fa-fw"></i> ${item.title}
                                     </a>
                                 </li>
