@@ -88,7 +88,7 @@ public class RenderController {
      * @param model
      * @return
      */
-    @RequestMapping("/index/{pageNumber}")
+    @RequestMapping("/index/{pageNumber}.html")
     @BussinessLog(value = "进入文章列表第{1}页", platform = PlatformEnum.WEB)
     public ModelAndView type(@PathVariable("pageNumber") Integer pageNumber, ArticleConditionVO vo, Model model) {
         vo.setPageNumber(pageNumber);
@@ -105,7 +105,7 @@ public class RenderController {
      * @param model
      * @return
      */
-    @GetMapping("/type/{typeId}")
+    @GetMapping("/type/{typeId}.html")
     @BussinessLog(value = "进入文章分类[{1}]列表页", platform = PlatformEnum.WEB)
     public ModelAndView type(@PathVariable("typeId") Long typeId, Model model) {
         ArticleConditionVO vo = new ArticleConditionVO();
@@ -124,7 +124,7 @@ public class RenderController {
      * @param model
      * @return
      */
-    @GetMapping("/type/{typeId}/{pageNumber}")
+    @GetMapping("/type/{typeId}/{pageNumber}.html")
     @BussinessLog(value = "进入文章分类[{1}]列表第{2}页", platform = PlatformEnum.WEB)
     public ModelAndView type(@PathVariable("typeId") Long typeId, @PathVariable("pageNumber") Integer pageNumber, Model model) {
         ArticleConditionVO vo = new ArticleConditionVO();
@@ -143,7 +143,7 @@ public class RenderController {
      * @param model
      * @return
      */
-    @GetMapping("/tag/{tagId}")
+    @GetMapping("/tag/{tagId}.html")
     @BussinessLog(value = "进入文章标签[{1}]列表页", platform = PlatformEnum.WEB)
     public ModelAndView tag(@PathVariable("tagId") Long tagId, Model model) {
         ArticleConditionVO vo = new ArticleConditionVO();
@@ -162,7 +162,7 @@ public class RenderController {
      * @param model
      * @return
      */
-    @GetMapping("/tag/{tagId}/{pageNumber}")
+    @GetMapping("/tag/{tagId}/{pageNumber}.html")
     @BussinessLog(value = "进入文章标签[{1}]列表第{2}页", platform = PlatformEnum.WEB)
     public ModelAndView tag(@PathVariable("tagId") Long tagId, @PathVariable("pageNumber") Integer pageNumber, Model model) {
         ArticleConditionVO vo = new ArticleConditionVO();
@@ -181,7 +181,7 @@ public class RenderController {
      * @param articleId
      * @return
      */
-    @GetMapping("/article/{articleId}")
+    @GetMapping("/article/{articleId}.html")
     @BussinessLog(value = "进入文章[{2}]详情页", platform = PlatformEnum.WEB)
     public ModelAndView article(Model model, @PathVariable("articleId") Long articleId) {
         Article article = bizArticleService.getByPrimaryKey(articleId);
@@ -202,7 +202,7 @@ public class RenderController {
      *
      * @return
      */
-    @GetMapping("/about")
+    @GetMapping("/about.html")
     @BussinessLog(value = "进入关于页", platform = PlatformEnum.WEB)
     public ModelAndView about() {
         return ResultUtil.view("about");
@@ -214,7 +214,7 @@ public class RenderController {
      * @param model
      * @return
      */
-    @GetMapping("/links")
+    @GetMapping("/links.html")
     @BussinessLog(value = "进入友情链接页", platform = PlatformEnum.WEB)
     public ModelAndView links(Model model) {
         model.addAttribute("link", sysLinkService.listAllByGroup());
@@ -226,7 +226,7 @@ public class RenderController {
      *
      * @return
      */
-    @GetMapping("/guestbook")
+    @GetMapping("/guestbook.html")
     @BussinessLog(value = "进入留言板页", platform = PlatformEnum.WEB)
     public ModelAndView guestbook() {
         return ResultUtil.view("guestbook");
@@ -238,7 +238,7 @@ public class RenderController {
      * @param model
      * @return
      */
-    @GetMapping("/archives")
+    @GetMapping("/archives.html")
     @BussinessLog(value = "进入归档目录页", platform = PlatformEnum.WEB)
     public ModelAndView archives(Model model) {
         Map<String, List> map = bizArticleArchivesService.listArchives();
@@ -251,7 +251,7 @@ public class RenderController {
      *
      * @return
      */
-    @GetMapping("/disclaimer")
+    @GetMapping("/disclaimer.html")
     @BussinessLog(value = "进入免责声明页", platform = PlatformEnum.WEB)
     public ModelAndView disclaimer() {
         return ResultUtil.view("disclaimer");
@@ -263,7 +263,7 @@ public class RenderController {
      * @param model
      * @return
      */
-    @GetMapping("/recommended")
+    @GetMapping("/recommended.html")
     @BussinessLog(value = "进入站长推荐页", platform = PlatformEnum.WEB)
     public ModelAndView recommended(Model model) {
         model.addAttribute("list", bizArticleService.listRecommended(100));
@@ -276,7 +276,7 @@ public class RenderController {
      * @param model
      * @return
      */
-    @GetMapping("/updateLog")
+    @GetMapping("/updateLog.html")
     @BussinessLog(value = "进入更新记录页", platform = PlatformEnum.WEB)
     public ModelAndView updateLog(Model model) {
         model.addAttribute("list", updateRecordeService.listAll());
