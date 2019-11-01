@@ -4,6 +4,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.shengdingbox.blog.business.entity.User;
+import com.shengdingbox.blog.business.enums.UserNotificationEnum;
+import com.shengdingbox.blog.business.enums.UserStatusEnum;
+import com.shengdingbox.blog.business.service.SysUserService;
+import com.shengdingbox.blog.framework.exception.DaoBaoCommentException;
+import com.shengdingbox.blog.framework.holder.RequestHolder;
+import com.shengdingbox.blog.util.IpUtil;
+import com.shengdingbox.blog.util.PasswordUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,6 +21,7 @@ import org.springframework.util.StringUtils;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysUserServiceImpl.java
 import com.shengdingbox.blog.business.entity.User;
 import com.shengdingbox.blog.business.entity.UserPwd;
 import com.shengdingbox.blog.business.enums.UserNotificationEnum;
@@ -27,6 +36,14 @@ import com.shengdingbox.blog.persistence.beans.SysUser;
 import com.shengdingbox.blog.persistence.mapper.SysUserMapper;
 import com.shengdingbox.blog.util.IpUtil;
 import com.shengdingbox.blog.util.PasswordUtil;
+=======
+import com.shengdingbox.blog.business.entity.UserPwd;
+import com.shengdingbox.blog.business.enums.UserPrivacyEnum;
+import com.shengdingbox.blog.business.vo.UserConditionVO;
+import com.shengdingbox.blog.framework.exception.DabaoException;
+import com.shengdingbox.blog.persistence.beans.SysUser;
+import com.shengdingbox.blog.persistence.mapper.SysUserMapper;
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysUserServiceImpl.java
 
 /**
  * 用户

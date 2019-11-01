@@ -4,13 +4,18 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import com.shengdingbox.blog.business.enums.CachePrefixEnum;
+import com.shengdingbox.blog.framework.holder.SpringContextHolder;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.util.StringUtils;
 
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/util/WebSpiderUtils.java
 import com.shengdingbox.blog.business.enums.CachePrefixEnum;
 import com.shengdingbox.blog.framework.holder.SpringContextHolder;
 
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/util/WebSpiderUtils.java
 /**
  * 
  * @author Dabao (17611555590@163.com)

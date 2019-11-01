@@ -1,11 +1,15 @@
 package com.shengdingbox.blog.plugin.oauth;
 
+import com.shengdingbox.blog.framework.property.JustAuthProperties;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/plugin/oauth/GithubRequest.java
 import com.shengdingbox.blog.framework.property.JustAuthProperties;
 
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/plugin/oauth/GithubRequest.java
 import me.zhyd.oauth.config.AuthConfig;
 import me.zhyd.oauth.request.AuthGithubRequest;
 import me.zhyd.oauth.request.AuthRequest;

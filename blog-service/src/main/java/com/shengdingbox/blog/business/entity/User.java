@@ -2,9 +2,15 @@ package com.shengdingbox.blog.business.entity;
 
 import java.util.Date;
 
+import com.shengdingbox.blog.business.enums.UserGenderEnum;
+import com.shengdingbox.blog.business.enums.UserNotificationEnum;
+import com.shengdingbox.blog.business.enums.UserTypeEnum;
+import com.shengdingbox.blog.framework.object.AbstractBO;
+import com.shengdingbox.blog.util.PasswordUtil;
 import org.springframework.util.StringUtils;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/entity/User.java
 import com.shengdingbox.blog.business.enums.UserGenderEnum;
 import com.shengdingbox.blog.business.enums.UserNotificationEnum;
 import com.shengdingbox.blog.business.enums.UserPrivacyEnum;
@@ -13,6 +19,11 @@ import com.shengdingbox.blog.business.enums.UserTypeEnum;
 import com.shengdingbox.blog.framework.object.AbstractBO;
 import com.shengdingbox.blog.persistence.beans.SysUser;
 import com.shengdingbox.blog.util.PasswordUtil;
+=======
+import com.shengdingbox.blog.business.enums.UserPrivacyEnum;
+import com.shengdingbox.blog.business.enums.UserStatusEnum;
+import com.shengdingbox.blog.persistence.beans.SysUser;
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/entity/User.java
 
 /**
  * 

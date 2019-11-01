@@ -10,6 +10,19 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
+import com.shengdingbox.blog.business.annotation.RedisCache;
+import com.shengdingbox.blog.business.enums.ArticleStatusEnum;
+import com.shengdingbox.blog.business.enums.CommentStatusEnum;
+import com.shengdingbox.blog.business.enums.FileUploadType;
+import com.shengdingbox.blog.business.vo.ArticleConditionVO;
+import com.shengdingbox.blog.entity.VirtualFile;
+import com.shengdingbox.blog.framework.exception.DaoBaoArticleException;
+import com.shengdingbox.blog.persistence.beans.BizArticle;
+import com.shengdingbox.blog.persistence.beans.BizArticleLove;
+import com.shengdingbox.blog.persistence.mapper.BizArticleLoveMapper;
+import com.shengdingbox.blog.persistence.mapper.BizCommentMapper;
+import com.shengdingbox.blog.plugin.file.GlobalFileUploader;
+import com.shengdingbox.blog.util.IpUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
@@ -21,6 +34,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleServiceImpl.java
 import com.shengdingbox.blog.business.annotation.RedisCache;
 import com.shengdingbox.blog.business.entity.Article;
 import com.shengdingbox.blog.business.entity.User;
@@ -38,10 +52,22 @@ import com.shengdingbox.blog.framework.holder.RequestHolder;
 import com.shengdingbox.blog.persistence.beans.BizArticle;
 import com.shengdingbox.blog.persistence.beans.BizArticleLook;
 import com.shengdingbox.blog.persistence.beans.BizArticleLove;
+=======
+import com.shengdingbox.blog.business.entity.Article;
+import com.shengdingbox.blog.business.entity.User;
+import com.shengdingbox.blog.business.enums.ResponseStatus;
+import com.shengdingbox.blog.business.service.BizArticleService;
+import com.shengdingbox.blog.business.service.BizArticleTagsService;
+import com.shengdingbox.blog.util.FileClient.FileUploader;
+import com.shengdingbox.blog.framework.exception.DabaoException;
+import com.shengdingbox.blog.framework.holder.RequestHolder;
+import com.shengdingbox.blog.persistence.beans.BizArticleLook;
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleServiceImpl.java
 import com.shengdingbox.blog.persistence.beans.BizArticleTags;
 import com.shengdingbox.blog.persistence.beans.BizComment;
 import com.shengdingbox.blog.persistence.beans.BizTags;
 import com.shengdingbox.blog.persistence.mapper.BizArticleLookMapper;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleServiceImpl.java
 import com.shengdingbox.blog.persistence.mapper.BizArticleLoveMapper;
 import com.shengdingbox.blog.persistence.mapper.BizArticleMapper;
 import com.shengdingbox.blog.persistence.mapper.BizArticleTagsMapper;
@@ -50,6 +76,11 @@ import com.shengdingbox.blog.plugin.file.GlobalFileUploader;
 import com.shengdingbox.blog.util.IpUtil;
 import com.shengdingbox.blog.util.SessionUtil;
 import com.shengdingbox.blog.util.FileClient.FileUploader;
+=======
+import com.shengdingbox.blog.persistence.mapper.BizArticleMapper;
+import com.shengdingbox.blog.persistence.mapper.BizArticleTagsMapper;
+import com.shengdingbox.blog.util.SessionUtil;
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleServiceImpl.java
 
 import lombok.extern.slf4j.Slf4j;
 import tk.mybatis.mapper.entity.Example;

@@ -128,7 +128,10 @@
                                 <img src="https://gitee.com/yadong.zhang/static/raw/master/JustAuth/facebook.png" alt="">
                             </a>
                         </li>
+<<<<<<< HEAD
                         -->
+=======
+>>>>>>> origin/origin
 
                     </ul>
                     <div class="oauth-line">

@@ -6,10 +6,17 @@ import java.io.InputStream;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/plugin/file/GlobalFileUploader.java
 import com.shengdingbox.blog.entity.VirtualFile;
 import com.shengdingbox.blog.exception.GlobalFileException;
 import com.shengdingbox.blog.util.FileClient.ApiClient;
 import com.shengdingbox.blog.util.FileClient.FileUploader;
+=======
+import com.shengdingbox.blog.util.FileClient.ApiClient;
+import com.shengdingbox.blog.util.FileClient.FileUploader;
+import com.shengdingbox.blog.entity.VirtualFile;
+import com.shengdingbox.blog.exception.GlobalFileException;
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/plugin/file/GlobalFileUploader.java
 
 /**
  * 

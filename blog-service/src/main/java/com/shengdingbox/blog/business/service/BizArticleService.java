@@ -5,12 +5,18 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.web.multipart.MultipartFile;
-
-import com.github.pagehelper.PageInfo;
 import com.shengdingbox.blog.business.entity.Article;
 import com.shengdingbox.blog.business.vo.ArticleConditionVO;
 import com.shengdingbox.blog.framework.object.AbstractService;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.github.pagehelper.PageInfo;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/BizArticleService.java
+import com.shengdingbox.blog.business.entity.Article;
+import com.shengdingbox.blog.business.vo.ArticleConditionVO;
+import com.shengdingbox.blog.framework.object.AbstractService;
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/BizArticleService.java
 
 /**
  * 文章列表

@@ -6,13 +6,17 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
 
+import com.shengdingbox.blog.util.FileUtil;
 import org.springframework.util.DigestUtils;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.util.StringUtils;
 
 import com.shengdingbox.blog.entity.VirtualFile;
 import com.shengdingbox.blog.exception.LocalApiException;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/util/FileClient/LocalApiClient.java
 import com.shengdingbox.blog.util.FileUtil;
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/util/FileClient/LocalApiClient.java
 import com.shengdingbox.blog.util.StreamUtil;
 
 /**

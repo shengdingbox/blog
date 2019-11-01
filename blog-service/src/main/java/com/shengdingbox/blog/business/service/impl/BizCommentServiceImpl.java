@@ -10,6 +10,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import com.shengdingbox.blog.business.service.MailService;
+import com.shengdingbox.blog.persistence.mapper.BizCommentMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
@@ -30,14 +32,20 @@ import com.shengdingbox.blog.business.enums.CommentStatusEnum;
 import com.shengdingbox.blog.business.enums.ConfigKeyEnum;
 import com.shengdingbox.blog.business.enums.TemplateKeyEnum;
 import com.shengdingbox.blog.business.service.BizCommentService;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizCommentServiceImpl.java
 import com.shengdingbox.blog.business.service.MailService;
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizCommentServiceImpl.java
 import com.shengdingbox.blog.business.service.SysConfigService;
 import com.shengdingbox.blog.business.vo.CommentConditionVO;
 import com.shengdingbox.blog.framework.exception.DaoBaoCommentException;
 import com.shengdingbox.blog.framework.holder.RequestHolder;
 import com.shengdingbox.blog.persistence.beans.BizComment;
 import com.shengdingbox.blog.persistence.beans.SysConfig;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizCommentServiceImpl.java
 import com.shengdingbox.blog.persistence.mapper.BizCommentMapper;
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizCommentServiceImpl.java
 import com.shengdingbox.blog.util.BeanConvertUtil;
 import com.shengdingbox.blog.util.HtmlUtil;
 import com.shengdingbox.blog.util.IpUtil;

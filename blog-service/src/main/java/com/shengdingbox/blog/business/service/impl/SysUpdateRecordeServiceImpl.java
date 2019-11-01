@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.shengdingbox.blog.business.entity.UpdateRecorde;
+import com.shengdingbox.blog.persistence.beans.SysUpdateRecorde;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,10 +14,15 @@ import org.springframework.util.CollectionUtils;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysUpdateRecordeServiceImpl.java
 import com.shengdingbox.blog.business.entity.UpdateRecorde;
 import com.shengdingbox.blog.business.service.SysUpdateRecordeService;
 import com.shengdingbox.blog.business.vo.UpdateRecordeConditionVO;
 import com.shengdingbox.blog.persistence.beans.SysUpdateRecorde;
+=======
+import com.shengdingbox.blog.business.service.SysUpdateRecordeService;
+import com.shengdingbox.blog.business.vo.UpdateRecordeConditionVO;
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysUpdateRecordeServiceImpl.java
 import com.shengdingbox.blog.persistence.mapper.SysUpdateRecordeMapper;
 
 /**

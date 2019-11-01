@@ -2,6 +2,7 @@ package com.shengdingbox.blog.framework.runner;
 
 import javax.servlet.ServletContextEvent;
 
+import com.shengdingbox.blog.framework.property.RedisProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
@@ -13,8 +14,11 @@ import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.context.ContextLoaderListener;
 
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/framework/runner/BlogApplicationRunner.java
 import com.shengdingbox.blog.framework.property.RedisProperties;
 
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/framework/runner/BlogApplicationRunner.java
 import lombok.extern.slf4j.Slf4j;
 
 /**

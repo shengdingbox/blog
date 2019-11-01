@@ -14,7 +14,11 @@
             <div class="scrolltext">
                 <ul class="list-unstyled" id="notice-box">
                     <li class="scrolltext-title">
+<<<<<<< HEAD
                         <a href="javascript:void(0)" rel="bookmark">本站正式启用新域名:<a href="https:/www.shengdingbox.com" target="_blank"><strong>https:/www.zhouzifei.com</strong></a></a>
+=======
+                        <a href="javascript:void(0)" rel="bookmark">本站正式启用新域名:<a href="https:/www.shengdingbox.com" target="_blank"><strong>https:/www.shengdingbox.com</strong></a></a>
+>>>>>>> origin/origin
                     </li>
                     <li class="scrolltext-title">
                         <a href="javascript:void(0)" rel="bookmark">活了二十多年，没能为祖国、为人民做点什么，每思及此，伤心欲绝。</a>

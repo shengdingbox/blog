@@ -1,15 +1,24 @@
 package com.shengdingbox.blog.business.service.impl;
 
+import com.shengdingbox.blog.business.entity.User;
+import com.shengdingbox.blog.business.enums.UserTypeEnum;
+import com.shengdingbox.blog.business.service.AuthService;
+import com.shengdingbox.blog.business.service.SysUserService;
+import com.shengdingbox.blog.util.BeanConvertUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/AuthServiceImpl.java
 import com.shengdingbox.blog.business.entity.User;
 import com.shengdingbox.blog.business.enums.UserTypeEnum;
 import com.shengdingbox.blog.business.service.AuthService;
 import com.shengdingbox.blog.business.service.SysUserService;
 import com.shengdingbox.blog.plugin.oauth.RequestFactory;
 import com.shengdingbox.blog.util.BeanConvertUtil;
+=======
+import com.shengdingbox.blog.plugin.oauth.RequestFactory;
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/AuthServiceImpl.java
 import com.shengdingbox.blog.util.SessionUtil;
 
 import lombok.extern.slf4j.Slf4j;

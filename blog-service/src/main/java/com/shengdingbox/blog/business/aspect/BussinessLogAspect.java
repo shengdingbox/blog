@@ -2,6 +2,7 @@ package com.shengdingbox.blog.business.aspect;
 
 import java.lang.reflect.Method;
 
+import com.shengdingbox.blog.business.enums.PlatformEnum;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -10,7 +11,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.shengdingbox.blog.business.annotation.BussinessLog;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/aspect/BussinessLogAspect.java
 import com.shengdingbox.blog.business.enums.PlatformEnum;
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/aspect/BussinessLogAspect.java
 import com.shengdingbox.blog.business.service.SysLogService;
 import com.shengdingbox.blog.util.AspectUtil;
 import com.shengdingbox.blog.util.RequestUtil;
@@ -33,7 +37,7 @@ public class BussinessLogAspect {
     @Autowired
     private SysLogService logService;
 
-    @Pointcut(value = "@annotation(com.zhouzifei.blog.business.annotation.BussinessLog)")
+    @Pointcut(value = "@annotation(com.shengdingbox.blog.business.annotation.BussinessLog)")
     public void pointcut() {
     }
 

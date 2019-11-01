@@ -2,12 +2,16 @@ package com.shengdingbox.blog.business.entity;
 
 import java.util.Date;
 
+import com.shengdingbox.blog.persistence.beans.SysUpdateRecorde;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.shengdingbox.blog.business.consts.DateConst;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/entity/UpdateRecorde.java
 import com.shengdingbox.blog.persistence.beans.SysUpdateRecorde;
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/entity/UpdateRecorde.java
 
 /**
  * 

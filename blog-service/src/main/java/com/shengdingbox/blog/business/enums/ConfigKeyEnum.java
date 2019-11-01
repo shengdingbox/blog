@@ -189,7 +189,11 @@ public enum ConfigKeyEnum {
     INSTALLDATE("installdate"),
 
     /**
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/enums/ConfigKeyEnum.java
      * 当切换浏览器tab时，在原tab上的标题https://www.shengdingbox.comox.com上的“麻溜儿回来~~~”
+=======
+     * 当切换浏览器tab时，在原tab上的标题。比如https://www.shengdingbox.com上的“麻溜儿回来~~~”
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/enums/ConfigKeyEnum.java
      */
     DYNAMIC_TITLE("dynamicTitle"),
     ;

@@ -4,10 +4,14 @@ package com.shengdingbox.blog.business.service;
 import java.util.List;
 import java.util.Map;
 
+import com.shengdingbox.blog.persistence.beans.SysConfig;
 import org.springframework.web.multipart.MultipartFile;
 
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/SysConfigService.java
 import com.shengdingbox.blog.persistence.beans.SysConfig;
 
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/SysConfigService.java
 /**
  * 系统配置
  * @author Dabao (17611555590@163.com)

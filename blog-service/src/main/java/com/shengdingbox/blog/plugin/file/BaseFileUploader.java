@@ -2,13 +2,22 @@ package com.shengdingbox.blog.plugin.file;
 
 import java.util.Map;
 
+import com.shengdingbox.blog.business.service.BizFileService;
 import org.springframework.util.StringUtils;
 
 import com.shengdingbox.blog.business.entity.File;
 import com.shengdingbox.blog.business.entity.User;
 import com.shengdingbox.blog.business.enums.ConfigKeyEnum;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/plugin/file/BaseFileUploader.java
 import com.shengdingbox.blog.business.service.BizFileService;
 import com.shengdingbox.blog.business.service.SysConfigService;
+=======
+import com.shengdingbox.blog.business.service.SysConfigService;
+import com.shengdingbox.blog.util.FileClient.AliyunOssApiClient;
+import com.shengdingbox.blog.util.FileClient.ApiClient;
+import com.shengdingbox.blog.util.FileClient.LocalApiClient;
+import com.shengdingbox.blog.util.FileClient.QiniuApiClient;
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/plugin/file/BaseFileUploader.java
 import com.shengdingbox.blog.entity.VirtualFile;
 import com.shengdingbox.blog.exception.GlobalFileException;
 import com.shengdingbox.blog.framework.exception.DabaoException;
@@ -16,10 +25,13 @@ import com.shengdingbox.blog.framework.holder.SpringContextHolder;
 import com.shengdingbox.blog.persistence.beans.BizFile;
 import com.shengdingbox.blog.util.BeanConvertUtil;
 import com.shengdingbox.blog.util.SessionUtil;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/plugin/file/BaseFileUploader.java
 import com.shengdingbox.blog.util.FileClient.AliyunOssApiClient;
 import com.shengdingbox.blog.util.FileClient.ApiClient;
 import com.shengdingbox.blog.util.FileClient.LocalApiClient;
 import com.shengdingbox.blog.util.FileClient.QiniuApiClient;
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/plugin/file/BaseFileUploader.java
 
 /**
  * 

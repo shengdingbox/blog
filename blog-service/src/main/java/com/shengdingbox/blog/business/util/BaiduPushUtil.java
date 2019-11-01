@@ -6,11 +6,16 @@ import java.util.Date;
 
 import javax.net.ssl.HttpsURLConnection;
 
+import com.shengdingbox.blog.framework.exception.DaoBaoCommentException;
+import com.shengdingbox.blog.util.RestClientUtil;
 import org.springframework.util.StringUtils;
 
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/util/BaiduPushUtil.java
 import com.shengdingbox.blog.framework.exception.DaoBaoCommentException;
 import com.shengdingbox.blog.util.RestClientUtil;
 
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/util/BaiduPushUtil.java
 import lombok.extern.slf4j.Slf4j;
 
 /**

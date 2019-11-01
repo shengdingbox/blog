@@ -5,16 +5,23 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.shengdingbox.blog.business.entity.ArticleTags;
+import com.shengdingbox.blog.business.service.BizArticleTagsService;
+import com.shengdingbox.blog.persistence.beans.BizArticleTags;
+import com.shengdingbox.blog.persistence.mapper.BizArticleTagsMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleTagsServiceImpl.java
 import com.shengdingbox.blog.business.entity.ArticleTags;
 import com.shengdingbox.blog.business.service.BizArticleTagsService;
 import com.shengdingbox.blog.persistence.beans.BizArticleTags;
 import com.shengdingbox.blog.persistence.mapper.BizArticleTagsMapper;
 
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleTagsServiceImpl.java
 import tk.mybatis.mapper.entity.Example;
 
 /**

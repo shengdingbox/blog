@@ -2,13 +2,19 @@ package com.shengdingbox.blog.framework.config;
 
 import javax.annotation.PostConstruct;
 
+import com.shengdingbox.blog.business.service.SysConfigService;
+import com.shengdingbox.blog.framework.tag.CustomTags;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 import com.jagregory.shiro.freemarker.ShiroTags;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/framework/config/FreeMarkerConfig.java
 import com.shengdingbox.blog.business.service.SysConfigService;
 import com.shengdingbox.blog.framework.tag.ArticleTags;
 import com.shengdingbox.blog.framework.tag.CustomTags;
+=======
+import com.shengdingbox.blog.framework.tag.ArticleTags;
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/framework/config/FreeMarkerConfig.java
 
 import freemarker.template.TemplateModelException;
 

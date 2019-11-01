@@ -2,11 +2,16 @@ package com.shengdingbox.blog.persistence.mapper;
 
 import java.util.List;
 
+import com.shengdingbox.blog.persistence.beans.SysUpdateRecorde;
+import com.shengdingbox.blog.plugin.BaseMapper;
 import org.springframework.stereotype.Repository;
 
 import com.shengdingbox.blog.business.vo.UpdateRecordeConditionVO;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/SysUpdateRecordeMapper.java
 import com.shengdingbox.blog.persistence.beans.SysUpdateRecorde;
 import com.shengdingbox.blog.plugin.BaseMapper;
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/SysUpdateRecordeMapper.java
 
 /**
  * 
@@ -17,7 +22,7 @@ import com.shengdingbox.blog.plugin.BaseMapper;
  * @since 1.0
  */
 @Repository
-public interface SysUpdateRecordeMapper extends BaseMapper<SysUpdateRecorde>{
+public interface SysUpdateRecordeMapper extends BaseMapper<SysUpdateRecorde> {
 
     /**
      * 分页查询

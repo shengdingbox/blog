@@ -2,12 +2,18 @@ package com.shengdingbox.blog.persistence.mapper;
 
 import java.util.List;
 
+import com.shengdingbox.blog.business.vo.TemplateConditionVO;
+import com.shengdingbox.blog.persistence.beans.SysTemplate;
+import com.shengdingbox.blog.plugin.BaseMapper;
 import org.springframework.stereotype.Repository;
 
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/SysTemplateMapper.java
 import com.shengdingbox.blog.business.vo.TemplateConditionVO;
 import com.shengdingbox.blog.persistence.beans.SysTemplate;
 import com.shengdingbox.blog.plugin.BaseMapper;
 
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/SysTemplateMapper.java
 /**
  * @author Dabao (17611555590@163.com)
  * @version 1.0
@@ -16,7 +22,7 @@ import com.shengdingbox.blog.plugin.BaseMapper;
  * @since 1.0
  */
 @Repository
-public interface SysTemplateMapper extends BaseMapper<SysTemplate>{
+public interface SysTemplateMapper extends BaseMapper<SysTemplate> {
 
     /**
      * 分页查询

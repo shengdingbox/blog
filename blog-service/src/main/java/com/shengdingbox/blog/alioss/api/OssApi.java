@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.shengdingbox.blog.exception.OssApiException;
 import org.springframework.util.CollectionUtils;
 
 import com.aliyun.oss.OSSClient;
@@ -25,7 +26,10 @@ import com.shengdingbox.blog.alioss.entity.BucketEntity;
 import com.shengdingbox.blog.alioss.entity.CorsRoleEntity;
 import com.shengdingbox.blog.alioss.entity.ObjectsRequestEntity;
 import com.shengdingbox.blog.alioss.entity.RefererEntity;
+<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/alioss/api/OssApi.java
 import com.shengdingbox.blog.exception.OssApiException;
+=======
+>>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/alioss/api/OssApi.java
 
 /**
  * 
