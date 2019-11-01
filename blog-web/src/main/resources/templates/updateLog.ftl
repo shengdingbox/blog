@@ -18,7 +18,7 @@
                         <div class="panel-heading">
                             <a class="panel-title" data-toggle="collapse" data-parent="#updatelog-body" href="#panel-element-${item.id?c}" contenteditable="true">${item.recordeTime?string('yyyy年MM月dd日 HH时')} v${item.version}</a>
                         </div>
-                        <div id="panel-element-${item.id?c}" class="panel-collapse collapse">
+                        <div id="panel-element-${item.id?c}.html" class="panel-collapse collapse">
                             <div class="panel-body" contenteditable="true">
                                 ${item.description}
                             </div>

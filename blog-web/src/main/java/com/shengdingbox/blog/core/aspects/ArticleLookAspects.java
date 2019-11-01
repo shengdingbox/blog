@@ -1,7 +1,11 @@
-package com.zhouzifei.blog.core.aspects;
+package com.shengdingbox.blog.core.aspects;
 
 import java.util.Date;
 
+import com.shengdingbox.blog.core.schedule.ArticleLookTask;
+import com.shengdingbox.blog.framework.holder.RequestHolder;
+import com.shengdingbox.blog.util.IpUtil;
+import com.shengdingbox.blog.util.SessionUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
@@ -9,11 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import com.zhouzifei.blog.business.entity.ArticleLook;
-import com.zhouzifei.blog.core.schedule.ArticleLookTask;
-import com.zhouzifei.blog.framework.holder.RequestHolder;
-import com.zhouzifei.blog.util.IpUtil;
-import com.zhouzifei.blog.util.SessionUtil;
+import com.shengdingbox.blog.business.entity.ArticleLook;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -21,7 +21,7 @@ import lombok.extern.slf4j.Slf4j;
  * 文章浏览记录aop操作
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */
@@ -34,7 +34,7 @@ public class ArticleLookAspects {
     @Autowired
     private ArticleLookTask task;
 
-    @Pointcut("execution(* com.zhouzifei.blog.controller.RenderController.article(..))")
+    @Pointcut("execution(* com.shengdingbox.blog.controller.RenderController.article(..))")
     public void pointcut() {
         // 切面切入点
     }

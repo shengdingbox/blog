@@ -1,4 +1,4 @@
-package com.zhouzifei.blog;
+package com.shengdingbox.blog;
 
 
 import org.springframework.boot.SpringApplication;
@@ -12,7 +12,7 @@ import me.zhyd.braum.spring.boot.annotation.EnableBraumConfiguration;
  * 程序启动类
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */

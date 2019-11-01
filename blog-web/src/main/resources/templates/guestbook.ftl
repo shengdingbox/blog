@@ -1,6 +1,6 @@
 <#include "include/macros.ftl">
 <@compress single_line=false>
-<@header title="留言板 | ${config.siteName}" canonical="/guestbook" hasEditor=true>
+<@header title="留言板 | ${config.siteName}" canonical="/guestbook.html" hasEditor=true>
 </@header>
 
 <div class="container custome-container">

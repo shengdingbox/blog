@@ -8,7 +8,7 @@
     <nav class="breadcrumb">
         <a class="crumbs" title="返回首页" href="${config.siteUrl}" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-home"></i>首页</a>
         <i class="fa fa-angle-right"></i>
-        <a href="${config.siteUrl}/type/${article.typeId}" title="点击查看该分类文章" data-toggle="tooltip" data-placement="bottom">${article.type.name}</a>
+        <a href="${config.siteUrl}/type/${article.typeId}.html" title="点击查看该分类文章" data-toggle="tooltip" data-placement="bottom">${article.type.name}</a>
         <i class="fa fa-angle-right"></i>正文
     </nav>
     <div class="row article-body">
@@ -18,12 +18,12 @@
                     <#if article.original?string('true','false') == 'true'>
                         <span class="article-blockquote article-blockquote-green"></span>
                         <span class="article-original article-original-green">
-                            <a href="${config.siteUrl}/article/${article.id}">原创</a>
+                            <a href="${config.siteUrl}/article/${article.id}.html">原创</a>
                         </span>
                     <#else>
                         <span class="article-blockquote article-blockquote-red"></span>
                         <span class="article-original article-original-red">
-                            <a href="${config.siteUrl}/article/${article.id}">转载</a>
+                            <a href="${config.siteUrl}/article/${article.id}.html">转载</a>
                         </span>
                     </#if>
                     <div class="blog-info-meta pull-right">
@@ -67,7 +67,7 @@
                             <div class="clear"></div>
                         </div>
                     </div>
-                    <div class="article-footer overflow-initial">所属分类：<a href="${config.siteUrl}/type/${article.typeId}" data-original-title="点击查看${article.type.name}分类的文章" data-toggle="tooltip" data-placement="bottom">${article.type.name}</a></div>
+                    <div class="article-footer overflow-initial">所属分类：<a href="${config.siteUrl}/type/${article.typeId}.html" data-original-title="点击查看${article.type.name}分类的文章" data-toggle="tooltip" data-placement="bottom">${article.type.name}</a></div>
                 </div>
             </div>
             <div class="blog-body article-tag">
@@ -77,7 +77,7 @@
                             <strong>本文标签：</strong>
                                 <#if article.tags?? && article.tags?size gt 0>
                                     <#list article.tags as item>
-                                        <a href="${config.siteUrl}/tag/${item.id?c}" class="c-label" data-original-title="${item.name}" data-toggle="tooltip" data-placement="bottom" target="_blank">${item.name}</a>
+                                        <a href="${config.siteUrl}/tag/${item.id?c}.html" class="c-label" data-original-title="${item.name}" data-toggle="tooltip" data-placement="bottom" target="_blank">${item.name}</a>
                                     </#list>
                                 <#else>
                                     <a href="javascript:;;" class="c-label" data-original-title="暂无相关标签" data-toggle="tooltip" data-placement="bottom" target="_blank">暂无相关标签</a>
@@ -95,14 +95,14 @@
                 </div>
             </div>
             <div class="blog-body">
-                <a href="https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=wylo59db&utm_source=wylo59db" target="_blank" rel="external nofollow">
+               <#-- <a href="https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=wylo59db&utm_source=wylo59db" target="_blank" rel="external nofollow">
                     <img src="${config.staticWebSite}/img/ad/aliyun_sale1000-60.png" alt="阿里云首购8折" class="img-responsive" style="width: 100%;">
-                </a>
+                </a>-->
             </div>
             <div class="blog-body prev-next">
                 <nav class="nav-single wow" data-wow-delay="0.3s">
                     <#if other.prev>
-                        <a href="${config.siteUrl}/article/${other.prev.id?c}" rel="prev">
+                        <a href="${config.siteUrl}/article/${other.prev.id?c}.html" rel="prev">
                             <span class="meta-nav" data-original-title="${other.prev.title}" data-toggle="tooltip" data-placement="bottom"><span class="post-nav"><i class="fa fa-angle-left"></i> 上一篇</span>
                                 <br>${other.prev.title}
                             </span>
@@ -115,13 +115,13 @@
                         </a>
                     </#if>
                     <#if other.next>
-                        <a href="${config.siteUrl}/article/${other.next.id?c}" rel="next">
+                        <a href="${config.siteUrl}/article/${other.next.id?c}.html" rel="next">
                             <span class="meta-nav" data-original-title="${other.next.title}" data-toggle="tooltip" data-placement="bottom"><span class="post-nav">下一篇 <i class="fa fa-angle-right"></i></span>
                                 <br>${other.next.title}
                             </span>
                         </a>
                     <#else >
-                        <a href="${config.siteUrl}/article/1" rel="nofollow next">
+                        <a href="${config.siteUrl}/article/1.html" rel="nofollow next">
                             <span class="meta-nav" data-original-title="已经到最后一篇了" data-toggle="tooltip" data-placement="bottom"><span class="post-nav">下一篇 <i class="fa fa-angle-right"></i></span>
                                 <br>已经到最后一篇了
                             </span>
@@ -148,7 +148,7 @@
                                     </div>
                                     <div class="line-right">
                                         <div class="text">
-                                            <a href="${config.siteUrl}/article/${item.id?c}" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">
+                                            <a href="${config.siteUrl}/article/${item.id?c}.html" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">
                                                 ${item.title}
                                             </a>
                                         </div>
@@ -180,7 +180,7 @@
                             <div class="line-container">
                                 <div class="line-right">
                                     <div class="text">
-                                        <a href="${config.siteUrl}/article/${item.id?c}" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">
+                                        <a href="${config.siteUrl}/article/${item.id?c}.html" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">
                                             <i class="fa fa-book fa-fw"></i>${item.title}
                                         </a>
                                     </div>

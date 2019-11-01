@@ -1,4 +1,4 @@
-package com.zhouzifei.blog.controller;
+package com.shengdingbox.blog.controller;
 
 import org.junit.Test;
 import org.springframework.http.MediaType;
@@ -7,13 +7,13 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import com.zhouzifei.blog.BaseJunitTest;
+import com.shengdingbox.blog.BaseJunitTest;
 
 /**
  * Api接口单元测试
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */

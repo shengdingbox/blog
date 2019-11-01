@@ -7,10 +7,10 @@
 	<packaging>jar</packaging>
 
 	<name>blog-web</name>
-	<description>yiqijavaBlog 前台程序</description>
+	<description>shengdingbox 前台程序</description>
 
 	<parent>
-		<groupId>com.zhouzifei</groupId>
+		<groupId>com.shengdingbox</groupId>
 		<artifactId>blog</artifactId>
 		<version>2.2.2</version>
 	</parent>
@@ -21,7 +21,7 @@
 			<artifactId>spring-boot-starter-websocket</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.zhouzifei</groupId>
+			<groupId>com.shengdingbox</groupId>
 			<artifactId>blog-service</artifactId>
         </dependency>
 	</dependencies>
@@ -43,7 +43,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.zhouzifei.blog.BlogWebApplication</mainClass>
+					<mainClass>com.shengdingbox.blog.BlogWebApplication</mainClass>
 					<layout>JAR</layout>
                     <!--构建完整可执行程序，可以直接运行-->
                     <executable>true</executable>

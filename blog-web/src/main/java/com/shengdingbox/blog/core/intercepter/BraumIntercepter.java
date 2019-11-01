@@ -1,4 +1,4 @@
-package com.zhouzifei.blog.core.intercepter;
+package com.shengdingbox.blog.core.intercepter;
 
 import java.io.PrintWriter;
 import java.util.concurrent.TimeUnit;
@@ -6,12 +6,11 @@ import java.util.concurrent.TimeUnit;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.shengdingbox.blog.util.RequestUtil;
+import com.shengdingbox.blog.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
-
-import com.zhouzifei.blog.util.RequestUtil;
-import com.zhouzifei.blog.util.ResultUtil;
 
 import lombok.extern.slf4j.Slf4j;
 import me.zhyd.braum.spring.boot.BraumProcessor;
@@ -21,7 +20,7 @@ import me.zhyd.braum.spring.boot.BraumResponse;
  * braum，自动识别恶意请求
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */

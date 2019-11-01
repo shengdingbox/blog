@@ -1,4 +1,4 @@
-package com.zhouzifei.blog;
+package com.shengdingbox.blog;
 
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
  * 
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */

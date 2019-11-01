@@ -14,7 +14,7 @@
             <div class="scrolltext">
                 <ul class="list-unstyled" id="notice-box">
                     <li class="scrolltext-title">
-                        <a href="javascript:void(0)" rel="bookmark">本站正式启用新域名:<a href="https:/www.zhouzifei.com" target="_blank"><strong>https:/www.zhouzifei.com</strong></a></a>
+                        <a href="javascript:void(0)" rel="bookmark">本站正式启用新域名:<a href="https:/www.shengdingbox.com" target="_blank"><strong>https:/www.shengdingbox.com</strong></a></a>
                     </li>
                     <li class="scrolltext-title">
                         <a href="javascript:void(0)" rel="bookmark">活了二十多年，没能为祖国、为人民做点什么，每思及此，伤心欲绝。</a>
@@ -40,7 +40,7 @@
                         <div class="carousel-inner">
                             <#list recommendedList as item>
                             <div class="item ${(item_index == 0)?string('active','')}">
-                                <a href="${config.siteUrl}/article/${item.id?c}">
+                                <a href="${config.siteUrl}/article/${item.id?c}.html">
                                     <img src="${item.coverImage}" alt="${item.title}" title="${item.title}">
                                 </a>
                                 <div class="zyd-carousel-caption">${item.title}</div>
@@ -64,15 +64,15 @@
                     <article class="fade-in">
                         <#if item.coverImage?? && (item.coverImage?length > 7)>
                             <figure class="thumbnail">
-                                <a href="${config.siteUrl}/article/${item.id?c}">
+                                <a href="${config.siteUrl}/article/${item.id?c}.html">
                                     <img width="150" height="150" <#if config.lazyloadPath!>data-original<#else>src</#if>="${item.coverImage}" class="img-responsive lazy-img" alt="${item.title!}">
                                 </a>
-                                <span class="cat"><a href="${config.siteUrl}/type/${item.typeId?c}">${item.type.name}</a></span>
+                                <span class="cat"><a href="${config.siteUrl}/type/${item.typeId?c}.html">${item.type.name}</a></span>
                             </figure>
                         </#if>
                         <header class="entry-header">
                             <h2 class="entry-title">
-                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="${item.title}" data-toggle="tooltip" data-placement="bottom">${item.title}</a>
+                                <a href="${config.siteUrl}/article/${item.id?c}.html" rel="bookmark" title="${item.title}" data-toggle="tooltip" data-placement="bottom">${item.title}</a>
                             </h2>
                         </header>
                         <div class="entry-content">
@@ -91,7 +91,7 @@
                             </span>
                             <div class="clear"></div>
                             <span class="entry-more">
-                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="点击查看文章详情" data-toggle="tooltip" data-placement="bottom">阅读全文</a>
+                                <a href="${config.siteUrl}/article/${item.id?c}.html" rel="bookmark" title="点击查看文章详情" data-toggle="tooltip" data-placement="bottom">阅读全文</a>
                             </span>
                         </div>
                     </article>

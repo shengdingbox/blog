@@ -1,16 +1,16 @@
-package com.zhouzifei.blog.core.schedule;
+package com.shengdingbox.blog.core.schedule;
 
 import javax.annotation.PostConstruct;
 
+import com.shengdingbox.blog.business.service.BizArticleLookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import com.zhouzifei.blog.business.entity.ArticleLook;
-import com.zhouzifei.blog.business.service.BizArticleLookService;
-import com.zhouzifei.blog.business.service.BizArticleService;
+import com.shengdingbox.blog.business.entity.ArticleLook;
+import com.shengdingbox.blog.business.service.BizArticleService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -18,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
  * 
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */
