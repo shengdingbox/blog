@@ -1,8 +1,13 @@
-package com.zhouzifei.blog.controller;
+package com.shengdingbox.blog.controller;
 
 import java.util.List;
 import java.util.Map;
 
+import com.shengdingbox.blog.business.enums.ArticleStatusEnum;
+import com.shengdingbox.blog.business.enums.PlatformEnum;
+import com.shengdingbox.blog.business.service.SysUpdateRecordeService;
+import com.shengdingbox.blog.business.vo.ArticleConditionVO;
+import com.shengdingbox.blog.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,23 +17,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.github.pagehelper.PageInfo;
-import com.zhouzifei.blog.business.annotation.BussinessLog;
-import com.zhouzifei.blog.business.entity.Article;
-import com.zhouzifei.blog.business.enums.ArticleStatusEnum;
-import com.zhouzifei.blog.business.enums.PlatformEnum;
-import com.zhouzifei.blog.business.service.BizArticleArchivesService;
-import com.zhouzifei.blog.business.service.BizArticleService;
-import com.zhouzifei.blog.business.service.SysLinkService;
-import com.zhouzifei.blog.business.service.SysUpdateRecordeService;
-import com.zhouzifei.blog.business.vo.ArticleConditionVO;
-import com.zhouzifei.blog.util.ResultUtil;
+import com.shengdingbox.blog.business.annotation.BussinessLog;
+import com.shengdingbox.blog.business.entity.Article;
+import com.shengdingbox.blog.business.service.BizArticleArchivesService;
+import com.shengdingbox.blog.business.service.BizArticleService;
+import com.shengdingbox.blog.business.service.SysLinkService;
 
 
 /**
  * 页面跳转类
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */

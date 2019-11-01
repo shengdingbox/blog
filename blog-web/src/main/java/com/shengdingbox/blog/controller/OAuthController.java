@@ -1,23 +1,21 @@
-package com.zhouzifei.blog.controller;
+package com.shengdingbox.blog.controller;
 
 import java.io.IOException;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.shengdingbox.blog.business.service.AuthService;
+import com.shengdingbox.blog.util.RequestUtil;
+import com.shengdingbox.blog.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.zhouzifei.blog.business.service.AuthService;
-import com.zhouzifei.blog.plugin.oauth.RequestFactory;
-import com.zhouzifei.blog.util.RequestUtil;
-import com.zhouzifei.blog.util.ResultUtil;
+import com.shengdingbox.blog.plugin.oauth.RequestFactory;
 
 import me.zhyd.oauth.model.AuthResponse;
 import me.zhyd.oauth.model.AuthToken;
@@ -27,7 +25,7 @@ import me.zhyd.oauth.request.AuthRequest;
  *
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */

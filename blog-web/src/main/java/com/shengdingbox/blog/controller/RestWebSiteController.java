@@ -1,28 +1,28 @@
-package com.zhouzifei.blog.controller;
+package com.shengdingbox.blog.controller;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import com.shengdingbox.blog.business.enums.PlatformEnum;
+import com.shengdingbox.blog.business.service.BizTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.zhouzifei.blog.business.annotation.BussinessLog;
-import com.zhouzifei.blog.business.entity.Template;
-import com.zhouzifei.blog.business.enums.PlatformEnum;
-import com.zhouzifei.blog.business.enums.TemplateKeyEnum;
-import com.zhouzifei.blog.business.service.BizArticleService;
-import com.zhouzifei.blog.business.service.BizTagsService;
-import com.zhouzifei.blog.business.service.BizTypeService;
-import com.zhouzifei.blog.business.service.SysConfigService;
-import com.zhouzifei.blog.business.service.SysTemplateService;
-import com.zhouzifei.blog.util.FreeMarkerUtil;
+import com.shengdingbox.blog.business.annotation.BussinessLog;
+import com.shengdingbox.blog.business.entity.Template;
+import com.shengdingbox.blog.business.enums.TemplateKeyEnum;
+import com.shengdingbox.blog.business.service.BizArticleService;
+import com.shengdingbox.blog.business.service.BizTagsService;
+import com.shengdingbox.blog.business.service.SysConfigService;
+import com.shengdingbox.blog.business.service.SysTemplateService;
+import com.shengdingbox.blog.util.FreeMarkerUtil;
 
 /**
  * 站点相关的接口类，主要为sitemap和robots的生成
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */

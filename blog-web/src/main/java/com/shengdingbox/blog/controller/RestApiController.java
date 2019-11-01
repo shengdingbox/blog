@@ -1,8 +1,21 @@
-package com.zhouzifei.blog.controller;
+package com.shengdingbox.blog.controller;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import com.shengdingbox.blog.business.entity.Comment;
+import com.shengdingbox.blog.business.entity.Link;
+import com.shengdingbox.blog.business.enums.CommentStatusEnum;
+import com.shengdingbox.blog.business.enums.PlatformEnum;
+import com.shengdingbox.blog.business.service.BizCommentService;
+import com.shengdingbox.blog.business.service.SysLinkService;
+import com.shengdingbox.blog.business.service.SysNoticeService;
+import com.shengdingbox.blog.framework.exception.DabaoLinkException;
+import com.shengdingbox.blog.framework.exception.DaoBaoArticleException;
+import com.shengdingbox.blog.framework.exception.DaoBaoCommentException;
+import com.shengdingbox.blog.framework.object.ResponseVO;
+import com.shengdingbox.blog.util.RestClientUtil;
+import com.shengdingbox.blog.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
@@ -15,22 +28,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.zhouzifei.blog.business.annotation.BussinessLog;
-import com.zhouzifei.blog.business.entity.Comment;
-import com.zhouzifei.blog.business.entity.Link;
-import com.zhouzifei.blog.business.enums.CommentStatusEnum;
-import com.zhouzifei.blog.business.enums.PlatformEnum;
-import com.zhouzifei.blog.business.service.BizArticleService;
-import com.zhouzifei.blog.business.service.BizCommentService;
-import com.zhouzifei.blog.business.service.SysLinkService;
-import com.zhouzifei.blog.business.service.SysNoticeService;
-import com.zhouzifei.blog.business.vo.CommentConditionVO;
-import com.zhouzifei.blog.framework.exception.DabaoLinkException;
-import com.zhouzifei.blog.framework.exception.DaoBaoArticleException;
-import com.zhouzifei.blog.framework.exception.DaoBaoCommentException;
-import com.zhouzifei.blog.framework.object.ResponseVO;
-import com.zhouzifei.blog.util.RestClientUtil;
-import com.zhouzifei.blog.util.ResultUtil;
+import com.shengdingbox.blog.business.annotation.BussinessLog;
+import com.shengdingbox.blog.business.service.BizArticleService;
+import com.shengdingbox.blog.business.vo.CommentConditionVO;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -38,7 +38,7 @@ import lombok.extern.slf4j.Slf4j;
  * 网站接口类，申请友链、评论、点赞等
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */
