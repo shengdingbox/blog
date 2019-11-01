@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper namespace="com.zhouzifei.blog.persistence.mapper.BizCommentMapper">
-	<resultMap id="rm" type="com.zhouzifei.blog.persistence.beans.BizComment">
+<mapper namespace="com.shengdingbox.blog.persistence.mapper.BizCommentMapper">
+	<resultMap id="rm" type="com.shengdingbox.blog.persistence.beans.BizComment">
 		<result property="id" jdbcType="BIGINT" column="id"/>
 		<result property="sid" jdbcType="BIGINT" column="sid"/>
 		<result property="userId" jdbcType="BIGINT" column="user_id"/>
@@ -27,16 +27,16 @@
 		<result property="oppose" jdbcType="INTEGER" column="oppose"/>
 		<result property="createTime" jdbcType="TIMESTAMP" column="create_time"/>
 		<result property="updateTime" jdbcType="TIMESTAMP" column="update_time"/>
-		<association property="parent" javaType="com.zhouzifei.blog.persistence.beans.BizComment">
+		<association property="parent" javaType="com.shengdingbox.blog.persistence.beans.BizComment">
 			<result property="id" jdbcType="BIGINT" column="parent_id"/>
 			<result property="nickname" jdbcType="VARCHAR" column="parent_nickname"/>
 			<result property="content" jdbcType="VARCHAR" column="parent_content"/>
 		</association>
-		<association property="article" javaType="com.zhouzifei.blog.persistence.beans.BizArticle">
+		<association property="article" javaType="com.shengdingbox.blog.persistence.beans.BizArticle">
 			<result property="id" jdbcType="BIGINT" column="article_id"/>
 			<result property="title" jdbcType="VARCHAR" column="article_title"/>
 		</association>
-		<association property="user" javaType="com.zhouzifei.blog.persistence.beans.SysUser">
+		<association property="user" javaType="com.shengdingbox.blog.persistence.beans.SysUser">
 			<result property="id" jdbcType="BIGINT" column="u_id"/>
 			<result property="username" jdbcType="VARCHAR" column="u_username"/>
 			<result property="nickname" jdbcType="VARCHAR" column="u_nickname"/>
@@ -44,7 +44,7 @@
 		</association>
 	</resultMap>
 
-	<select id="findPageBreakByCondition" parameterType="com.zhouzifei.blog.business.vo.CommentConditionVO" resultMap="rm">
+	<select id="findPageBreakByCondition" parameterType="com.shengdingbox.blog.business.vo.CommentConditionVO" resultMap="rm">
 		SELECT
 			t.*,
 			f.id AS parent_id,

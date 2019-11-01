@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper namespace="com.zhouzifei.blog.persistence.mapper.SysLinkMapper">
-	<resultMap id="rm" type="com.zhouzifei.blog.persistence.beans.SysLink">
+<mapper namespace="com.shengdingbox.blog.persistence.mapper.SysLinkMapper">
+	<resultMap id="rm" type="com.shengdingbox.blog.persistence.beans.SysLink">
 		<result property="id" jdbcType="BIGINT" column="id"/>
 		<result property="url" jdbcType="VARCHAR" column="url"/>
 		<result property="name" jdbcType="VARCHAR" column="name"/>
@@ -19,7 +19,7 @@
 	</resultMap>
 
 	<!-- 按照状态分段排序，已经禁用的记录显示在列表最后，未被禁用的显示在列表顶部 -->
-	<select id="findPageBreakByCondition" parameterType="com.zhouzifei.blog.business.vo.LinkConditionVO" resultMap="rm">
+	<select id="findPageBreakByCondition" parameterType="com.shengdingbox.blog.business.vo.LinkConditionVO" resultMap="rm">
 		SELECT
 			t.*
 		FROM
