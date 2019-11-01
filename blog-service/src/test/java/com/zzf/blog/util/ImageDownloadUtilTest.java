@@ -8,13 +8,13 @@ import java.util.regex.Pattern;
 import org.junit.Test;
 import org.springframework.util.CollectionUtils;
 
-import com.zhouzifei.blog.business.util.ImageDownloadUtil;
+import com.shengdingbox.blog.business.util.ImageDownloadUtil;
 
 
 /**
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */

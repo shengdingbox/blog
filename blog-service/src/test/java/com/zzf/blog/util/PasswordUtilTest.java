@@ -2,13 +2,13 @@ package com.zzf.blog.util;
 
 import org.junit.Test;
 
-import com.zhouzifei.blog.util.PasswordUtil;
+import com.shengdingbox.blog.util.PasswordUtil;
 
 /**
  * 密码加密测试工具类
  * @author Dabao (17611555590@163.com)
  * @version 1.0
- * @website https://www.zhouzifei.com
+ * @website https://www.shengdingbox.com
  * @date 2019年7月16日
  * @since 1.0
  */

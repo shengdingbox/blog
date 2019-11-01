@@ -7,7 +7,7 @@ import java.io.InputStream;
 
 import org.junit.Test;
 
-import com.zhouzifei.blog.alioss.api.OssApi;
+import com.shengdingbox.blog.alioss.api.OssApi;
 
 
 
