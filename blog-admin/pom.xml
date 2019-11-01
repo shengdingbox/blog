@@ -10,20 +10,24 @@
     <description>博客后台程序</description>
 
     <parent>
-        <groupId>com.zhouzifei</groupId>
+        <groupId>com.shengdingbox</groupId>
         <artifactId>blog</artifactId>
         <version>2.2.2</version>
     </parent>
 
     <dependencies>
         <dependency>
-            <groupId>com.zhouzifei</groupId>
+            <groupId>com.shengdingbox</groupId>
             <artifactId>blog-service</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.shengdingbox</groupId>
+            <artifactId>blog-service</artifactId>
         </dependency>
 
     </dependencies>
@@ -45,20 +49,20 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.zhouzifei.blog.BlogAdminApplication</mainClass>
+                    <mainClass>com.shengdingbox.blog.BlogAdminApplication</mainClass>
                     <layout>JAR</layout>
                     <!--构建完整可执行程序，可以直接运行-->
                     <executable>true</executable>
                 </configuration>
             </plugin>
-             <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <skipTests>true</skipTests>
                 </configuration>
             </plugin>
-        </plugins> 
+        </plugins>
     </build>
-    
+
 </project>

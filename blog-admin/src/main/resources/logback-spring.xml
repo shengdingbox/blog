@@ -28,11 +28,11 @@
 
     <logger name="org.springframework.core.env" level="ERROR"/>
     <logger name="us.codecraft.webmagic.downloader" level="WARN"/>
-    <logger name="com.zhouzifei.blog.framework.runner" level="ERROR"/>
+    <logger name="com.shengdingbox.blog.framework.runner" level="ERROR"/>
 
     <!-- 测试环境+开发环境，日志级别为INFO且不写日志文件 -->
     <springProfile name="test,dev">
-        <logger name="com.zhouzifei.blog" additivity="false">
+        <logger name="com.shengdingbox.blog" additivity="false">
             <appender-ref ref="STDOUT"/>
         </logger>
         <root level="INFO">
@@ -42,7 +42,7 @@
 
     <!-- 生产环境. 日志级别为WARN且写日志文件-->
     <springProfile name="prod">
-        <logger name="com.zhouzifei.blog" additivity="false">
+        <logger name="com.shengdingbox.blog" additivity="false">
             <appender-ref ref="STDOUT"/>
             <appender-ref ref="FILE" />
         </logger>
