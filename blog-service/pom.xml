@@ -10,7 +10,7 @@
     <description>核心依赖代码，包含bo、do、dao等</description>
 
     <parent>
-        <groupId>com.zhouzifei</groupId>
+        <groupId>com.shengdingbox</groupId>
         <artifactId>blog</artifactId>
         <version>2.2.2</version>
     </parent>

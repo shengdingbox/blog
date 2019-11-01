@@ -17,7 +17,7 @@ import me.zhyd.oauth.config.AuthConfig;
  * @since 1.0
  */
 @Component
-@ConfigurationProperties(prefix = "com.zhouzifei.blog")
+@ConfigurationProperties(prefix = "com.shengdingbox.blog")
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Order(-1)

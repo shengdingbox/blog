@@ -13,6 +13,6 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @since 1.0
  */
 @Component
-@MapperScan("com.zhouzifei.blog.persistence.mapper")
+@MapperScan("com.shengdingbox.blog.persistence.mapper")
 public class MybatisConfig {
 }
