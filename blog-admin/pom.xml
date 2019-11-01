@@ -10,7 +10,6 @@
     <description>博客后台程序</description>
 
     <parent>
-        <groupId>com.zhouzifei</groupId>
         <groupId>com.shengdingbox</groupId>
         <artifactId>blog</artifactId>
         <version>2.2.2</version>
