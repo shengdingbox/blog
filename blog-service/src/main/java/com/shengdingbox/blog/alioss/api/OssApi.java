@@ -26,10 +26,6 @@ import com.shengdingbox.blog.alioss.entity.BucketEntity;
 import com.shengdingbox.blog.alioss.entity.CorsRoleEntity;
 import com.shengdingbox.blog.alioss.entity.ObjectsRequestEntity;
 import com.shengdingbox.blog.alioss.entity.RefererEntity;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/alioss/api/OssApi.java
-import com.shengdingbox.blog.exception.OssApiException;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/alioss/api/OssApi.java
 
 /**
  * 
