@@ -62,12 +62,12 @@ spring:
         charset: UTF-8
 # MyBatis
 mybatis:
-    type-aliases-package: com.zhouzifei.blog.persistence.beans
+    type-aliases-package: com.shengdingbox.blog.persistence.beans
     mapper-locations: classpath:/mybatis/*.xml
 # mapper
 mapper:
     mappers:
-        - com.zhouzifei.blog.plugin.BaseMapper
+        - com.shengdingbox.blog.plugin.BaseMapper
     not-empty: false
     identity: MYSQL
 # pagehelper
