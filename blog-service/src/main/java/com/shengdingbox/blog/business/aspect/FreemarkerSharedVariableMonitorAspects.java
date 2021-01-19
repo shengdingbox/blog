@@ -1,10 +1,9 @@
 package com.shengdingbox.blog.business.aspect;
 
-import java.util.Date;
-import java.util.Map;
-
 import com.shengdingbox.blog.business.enums.ConfigKeyEnum;
 import com.shengdingbox.blog.business.service.SysConfigService;
+import freemarker.template.TemplateModelException;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -13,14 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/aspect/FreemarkerSharedVariableMonitorAspects.java
-import com.shengdingbox.blog.business.enums.ConfigKeyEnum;
-import com.shengdingbox.blog.business.service.SysConfigService;
+import java.util.Date;
+import java.util.Map;
 
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/aspect/FreemarkerSharedVariableMonitorAspects.java
-import freemarker.template.TemplateModelException;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 用于监控freemarker自定义标签中共享变量是否发生变化，发生变化时实时更新到内存中

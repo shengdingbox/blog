@@ -1,9 +1,5 @@
 package com.shengdingbox.blog.business.service.impl;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 import com.shengdingbox.blog.business.entity.RoleResources;
 import com.shengdingbox.blog.business.service.SysRoleResourcesService;
 import com.shengdingbox.blog.framework.holder.RequestHolder;
@@ -17,18 +13,11 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
-
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysRoleResourcesServiceImpl.java
-import com.shengdingbox.blog.business.entity.RoleResources;
-import com.shengdingbox.blog.business.service.SysRoleResourcesService;
-import com.shengdingbox.blog.framework.holder.RequestHolder;
-import com.shengdingbox.blog.persistence.beans.SysRoleResources;
-import com.shengdingbox.blog.persistence.mapper.SysRoleResourcesMapper;
-import com.shengdingbox.blog.util.IpUtil;
-
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysRoleResourcesServiceImpl.java
 import tk.mybatis.mapper.entity.Example;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 角色资源

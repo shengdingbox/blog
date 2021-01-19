@@ -1,8 +1,5 @@
 package com.shengdingbox.blog.util.FileClient;
 
-import java.io.InputStream;
-import java.util.Date;
-
 import com.alibaba.fastjson.JSON;
 import com.qiniu.common.QiniuException;
 import com.qiniu.common.Region;
@@ -16,6 +13,9 @@ import com.qiniu.util.StringUtils;
 import com.shengdingbox.blog.entity.VirtualFile;
 import com.shengdingbox.blog.exception.QiniuApiException;
 import com.shengdingbox.blog.util.FileUtil;
+
+import java.io.InputStream;
+import java.util.Date;
 
 /**
  * Qiniu云操作文件的api：v1

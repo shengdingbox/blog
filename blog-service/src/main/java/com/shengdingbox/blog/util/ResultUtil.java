@@ -1,20 +1,15 @@
 package com.shengdingbox.blog.util;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
-import com.shengdingbox.blog.framework.object.ResponseVO;
-import org.springframework.web.servlet.ModelAndView;
-
 import com.github.pagehelper.PageInfo;
 import com.shengdingbox.blog.business.consts.CommonConst;
 import com.shengdingbox.blog.business.enums.ResponseStatus;
 import com.shengdingbox.blog.framework.object.PageResult;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/util/ResultUtil.java
 import com.shengdingbox.blog.framework.object.ResponseVO;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/util/ResultUtil.java
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 接口返回工具类，支持ModelAndView、ResponseVO、PageResult

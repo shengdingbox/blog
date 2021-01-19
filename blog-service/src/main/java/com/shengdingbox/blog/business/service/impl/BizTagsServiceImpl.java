@@ -16,20 +16,12 @@ import org.springframework.util.StringUtils;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.shengdingbox.blog.business.annotation.RedisCache;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizTagsServiceImpl.java
-import com.shengdingbox.blog.business.entity.Tags;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizTagsServiceImpl.java
 import com.shengdingbox.blog.business.service.BizTagsService;
 import com.shengdingbox.blog.business.vo.TagsConditionVO;
 import com.shengdingbox.blog.framework.exception.DabaoException;
 import com.shengdingbox.blog.persistence.beans.BizArticleTags;
 import com.shengdingbox.blog.persistence.beans.BizTags;
 import com.shengdingbox.blog.persistence.mapper.BizArticleTagsMapper;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizTagsServiceImpl.java
-import com.shengdingbox.blog.persistence.mapper.BizTagsMapper;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizTagsServiceImpl.java
 
 /**
  * 标签
@@ -52,7 +44,9 @@ public class BizTagsServiceImpl implements BizTagsService {
         PageHelper.startPage(vo.getPageNumber(), vo.getPageSize());
         List<BizTags> list = bizTagsMapper.findPageBreakByCondition(vo);
         List<Tags> boList = getTags(list);
-        if (boList == null) return null;
+        if (boList == null) {
+            return null;
+        }
         PageInfo bean = new PageInfo<BizTags>(list);
         bean.setList(boList);
         return bean;

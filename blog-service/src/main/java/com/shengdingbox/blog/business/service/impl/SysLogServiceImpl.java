@@ -1,18 +1,21 @@
 package com.shengdingbox.blog.business.service.impl;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
+import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.shengdingbox.blog.business.entity.Log;
 import com.shengdingbox.blog.business.entity.User;
 import com.shengdingbox.blog.business.enums.LogLevelEnum;
 import com.shengdingbox.blog.business.enums.LogTypeEnum;
 import com.shengdingbox.blog.business.enums.PlatformEnum;
 import com.shengdingbox.blog.business.service.SysLogService;
+import com.shengdingbox.blog.business.util.WebSpiderUtils;
 import com.shengdingbox.blog.business.vo.LogConditionVO;
 import com.shengdingbox.blog.persistence.beans.SysLog;
+import com.shengdingbox.blog.persistence.mapper.SysLogMapper;
 import com.shengdingbox.blog.util.RequestUtil;
+import com.shengdingbox.blog.util.SessionUtil;
+import eu.bitwalker.useragentutils.UserAgent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -20,28 +23,9 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 
-import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysLogServiceImpl.java
-import com.shengdingbox.blog.business.entity.Log;
-import com.shengdingbox.blog.business.entity.User;
-import com.shengdingbox.blog.business.enums.LogLevelEnum;
-import com.shengdingbox.blog.business.enums.LogTypeEnum;
-import com.shengdingbox.blog.business.enums.PlatformEnum;
-import com.shengdingbox.blog.business.service.SysLogService;
-import com.shengdingbox.blog.business.util.WebSpiderUtils;
-import com.shengdingbox.blog.business.vo.LogConditionVO;
-import com.shengdingbox.blog.persistence.beans.SysLog;
-import com.shengdingbox.blog.persistence.mapper.SysLogMapper;
-import com.shengdingbox.blog.util.RequestUtil;
-=======
-import com.shengdingbox.blog.business.util.WebSpiderUtils;
-import com.shengdingbox.blog.persistence.mapper.SysLogMapper;
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysLogServiceImpl.java
-import com.shengdingbox.blog.util.SessionUtil;
-
-import eu.bitwalker.useragentutils.UserAgent;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 

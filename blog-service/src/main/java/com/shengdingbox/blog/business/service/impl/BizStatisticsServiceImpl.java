@@ -13,11 +13,6 @@ import com.github.pagehelper.PageHelper;
 import com.shengdingbox.blog.business.entity.Article;
 import com.shengdingbox.blog.business.entity.Statistics;
 import com.shengdingbox.blog.business.service.BizArticleService;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizStatisticsServiceImpl.java
-import com.shengdingbox.blog.business.service.BizStatisticsService;
-import com.shengdingbox.blog.persistence.beans.BizStatistics;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizStatisticsServiceImpl.java
 import com.shengdingbox.blog.persistence.mapper.BizStatisticsMapper;
 
 /**

@@ -1,15 +1,10 @@
 package com.shengdingbox.blog.persistence.mapper;
 
-import java.util.List;
-
 import com.shengdingbox.blog.persistence.beans.BizStatistics;
 import org.springframework.stereotype.Repository;
 
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/BizStatisticsMapper.java
-import com.shengdingbox.blog.persistence.beans.BizStatistics;
+import java.util.List;
 
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/BizStatisticsMapper.java
 /**
  * 统计
  * @author Dabao (17611555590@163.com)

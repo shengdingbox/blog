@@ -3,14 +3,10 @@ package com.shengdingbox.blog.business.service;
 
 import com.github.pagehelper.PageInfo;
 import com.shengdingbox.blog.business.entity.Template;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/SysTemplateService.java
 import com.shengdingbox.blog.business.enums.TemplateKeyEnum;
 import com.shengdingbox.blog.business.vo.TemplateConditionVO;
-=======
-import com.shengdingbox.blog.business.vo.TemplateConditionVO;
-import com.shengdingbox.blog.business.enums.TemplateKeyEnum;
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/SysTemplateService.java
 import com.shengdingbox.blog.framework.object.AbstractService;
+
 
 /**
  * 系统模板

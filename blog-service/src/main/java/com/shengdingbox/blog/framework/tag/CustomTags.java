@@ -1,44 +1,25 @@
 package com.shengdingbox.blog.framework.tag;
 
-import java.lang.reflect.Field;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import com.shengdingbox.blog.business.entity.Comment;
+import com.shengdingbox.blog.business.entity.User;
 import com.shengdingbox.blog.business.enums.UserTypeEnum;
-import com.shengdingbox.blog.business.service.BizCommentService;
-import com.shengdingbox.blog.business.service.BizTypeService;
+import com.shengdingbox.blog.business.service.*;
+import com.shengdingbox.blog.framework.property.JustAuthProperties;
+import com.shengdingbox.blog.util.SessionUtil;
+import lombok.extern.slf4j.Slf4j;
+import me.zhyd.oauth.config.AuthConfig;
+import me.zhyd.oauth.utils.AuthConfigChecker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.NumberUtils;
 import org.springframework.util.StringUtils;
 
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/framework/tag/CustomTags.java
-import com.shengdingbox.blog.business.entity.Comment;
-import com.shengdingbox.blog.business.entity.User;
-import com.shengdingbox.blog.business.enums.UserTypeEnum;
-import com.shengdingbox.blog.business.service.BizCommentService;
-import com.shengdingbox.blog.business.service.BizTagsService;
-import com.shengdingbox.blog.business.service.BizTypeService;
-=======
-import com.shengdingbox.blog.business.entity.User;
-import com.shengdingbox.blog.business.service.BizTagsService;
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/framework/tag/CustomTags.java
-import com.shengdingbox.blog.business.service.SysConfigService;
-import com.shengdingbox.blog.business.service.SysResourcesService;
-import com.shengdingbox.blog.business.service.SysTemplateService;
-import com.shengdingbox.blog.framework.property.JustAuthProperties;
-import com.shengdingbox.blog.util.SessionUtil;
+import java.lang.reflect.Field;
+import java.text.DecimalFormat;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
-import lombok.extern.slf4j.Slf4j;
-import me.zhyd.oauth.config.AuthConfig;
-import me.zhyd.oauth.utils.AuthConfigChecker;
 
 /**
  * 自定义的freemarker标签

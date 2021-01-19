@@ -266,7 +266,14 @@
 <!--             </resource> -->
 <!--         </resources> -->
         </build>
-
-
-
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/136491-release-v0VPB7/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/136491-snapshot-8y7APm/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>

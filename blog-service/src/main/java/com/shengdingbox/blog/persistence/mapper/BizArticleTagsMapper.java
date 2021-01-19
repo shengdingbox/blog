@@ -1,18 +1,11 @@
 package com.shengdingbox.blog.persistence.mapper;
 
-import java.util.List;
-
 import com.shengdingbox.blog.business.vo.ArticleTagsConditionVO;
+import com.shengdingbox.blog.persistence.beans.BizArticleTags;
 import com.shengdingbox.blog.plugin.BaseMapper;
 import org.springframework.stereotype.Repository;
 
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/BizArticleTagsMapper.java
-import com.shengdingbox.blog.business.vo.ArticleTagsConditionVO;
-import com.shengdingbox.blog.persistence.beans.BizArticleTags;
-import com.shengdingbox.blog.plugin.BaseMapper;
-=======
-import com.shengdingbox.blog.persistence.beans.BizArticleTags;
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/BizArticleTagsMapper.java
+import java.util.List;
 
 /**
  * 

@@ -1,32 +1,16 @@
 package com.shengdingbox.blog.util.FileClient;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Date;
-
+import cn.hutool.core.date.DateUtil;
 import com.shengdingbox.blog.entity.VirtualFile;
+import com.shengdingbox.blog.exception.GlobalFileException;
 import com.shengdingbox.blog.exception.OssApiException;
 import com.shengdingbox.blog.exception.QiniuApiException;
 import com.shengdingbox.blog.util.FileUtil;
 import com.shengdingbox.blog.util.ImageUtil;
 import org.springframework.web.multipart.MultipartFile;
 
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/util/FileClient/BaseApiClient.java
-import com.shengdingbox.blog.entity.VirtualFile;
-import com.shengdingbox.blog.exception.GlobalFileException;
-import com.shengdingbox.blog.exception.OssApiException;
-import com.shengdingbox.blog.exception.QiniuApiException;
-import com.shengdingbox.blog.util.FileUtil;
-import com.shengdingbox.blog.util.ImageUtil;
-=======
-import com.shengdingbox.blog.exception.GlobalFileException;
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/util/FileClient/BaseApiClient.java
-
-import cn.hutool.core.date.DateUtil;
+import java.io.*;
+import java.util.Date;
 
 /**
  * 

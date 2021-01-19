@@ -1,20 +1,15 @@
 package com.shengdingbox.blog.business.entity;
 
-import java.util.Date;
-
-import com.shengdingbox.blog.business.enums.CommentStatusEnum;
-import org.springframework.util.StringUtils;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/entity/Comment.java
 import com.shengdingbox.blog.business.enums.CommentStatusEnum;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/entity/Comment.java
 import com.shengdingbox.blog.business.enums.ExtraCommentTypeEnum;
 import com.shengdingbox.blog.persistence.beans.BizArticle;
 import com.shengdingbox.blog.persistence.beans.BizComment;
 import com.shengdingbox.blog.util.HtmlUtil;
+import org.springframework.util.StringUtils;
+
+import java.util.Date;
 
 /**
  * 

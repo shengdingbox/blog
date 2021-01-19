@@ -1,27 +1,18 @@
 package com.shengdingbox.blog.business.service.impl;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import com.shengdingbox.blog.persistence.mapper.SysResourceMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.util.Assert;
-import org.springframework.util.CollectionUtils;
-
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.shengdingbox.blog.business.entity.Resources;
 import com.shengdingbox.blog.business.service.SysResourcesService;
 import com.shengdingbox.blog.business.vo.ResourceConditionVO;
 import com.shengdingbox.blog.persistence.beans.SysResources;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysResourcesServiceImpl.java
 import com.shengdingbox.blog.persistence.mapper.SysResourceMapper;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysResourcesServiceImpl.java
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.util.Assert;
+import org.springframework.util.CollectionUtils;
+
+import java.util.*;
 
 /**
  * 系统资源

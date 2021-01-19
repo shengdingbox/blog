@@ -1,15 +1,10 @@
 package com.shengdingbox.blog.persistence.mapper;
 
-import java.util.Map;
-
+import com.shengdingbox.blog.persistence.beans.SysConfig;
 import com.shengdingbox.blog.plugin.BaseMapper;
 import org.springframework.stereotype.Repository;
 
-import com.shengdingbox.blog.persistence.beans.SysConfig;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/SysConfigMapper.java
-import com.shengdingbox.blog.plugin.BaseMapper;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/SysConfigMapper.java
+import java.util.Map;
 
 /**
  * 

@@ -1,9 +1,5 @@
 package com.shengdingbox.blog.util.FileClient;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Date;
-
 import com.shengdingbox.blog.alioss.api.OssApi;
 import com.shengdingbox.blog.entity.VirtualFile;
 import com.shengdingbox.blog.exception.OssApiException;
@@ -12,15 +8,10 @@ import com.shengdingbox.blog.util.StreamUtil;
 import org.springframework.util.DigestUtils;
 import org.springframework.util.StringUtils;
 
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/util/FileClient/AliyunOssApiClient.java
-import com.shengdingbox.blog.alioss.api.OssApi;
-import com.shengdingbox.blog.entity.VirtualFile;
-import com.shengdingbox.blog.exception.OssApiException;
-import com.shengdingbox.blog.util.FileUtil;
-import com.shengdingbox.blog.util.StreamUtil;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Date;
 
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/util/FileClient/AliyunOssApiClient.java
 /**
  * 
  * @author Dabao (17611555590@163.com)

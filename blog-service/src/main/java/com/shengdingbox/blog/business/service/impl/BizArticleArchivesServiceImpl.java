@@ -10,11 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
-
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleArchivesServiceImpl.java
-import com.shengdingbox.blog.business.entity.ArticleArchives;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleArchivesServiceImpl.java
 import com.shengdingbox.blog.business.service.BizArticleArchivesService;
 import com.shengdingbox.blog.persistence.beans.BizArticleArchives;
 import com.shengdingbox.blog.persistence.mapper.BizArticleArchivesMapper;

@@ -20,17 +20,6 @@ import org.springframework.util.CollectionUtils;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizTypeServiceImpl.java
-import com.shengdingbox.blog.business.entity.Type;
-import com.shengdingbox.blog.business.service.BizTypeService;
-import com.shengdingbox.blog.business.vo.TypeConditionVO;
-import com.shengdingbox.blog.framework.exception.DabaoException;
-import com.shengdingbox.blog.persistence.beans.BizArticle;
-import com.shengdingbox.blog.persistence.beans.BizType;
-import com.shengdingbox.blog.persistence.mapper.BizArticleMapper;
-import com.shengdingbox.blog.persistence.mapper.BizTypeMapper;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizTypeServiceImpl.java
 
 /**
  * 分类
@@ -53,7 +42,9 @@ public class BizTypeServiceImpl implements BizTypeService {
         PageHelper.startPage(vo.getPageNumber(), vo.getPageSize());
         List<BizType> list = bizTypeMapper.findPageBreakByCondition(vo);
         List<Type> boList = getTypes(list);
-        if (boList == null) return null;
+        if (boList == null) {
+            return null;
+        }
         PageInfo bean = new PageInfo<BizType>(list);
         bean.setList(boList);
         return bean;

@@ -1,26 +1,20 @@
 package com.shengdingbox.blog.business.service.impl;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
+import com.shengdingbox.blog.business.entity.UserRole;
 import com.shengdingbox.blog.business.service.SysUserRoleService;
+import com.shengdingbox.blog.persistence.beans.SysUserRole;
+import com.shengdingbox.blog.persistence.mapper.SysUserRoleMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
-
-import com.shengdingbox.blog.business.entity.UserRole;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysUserRoleServiceImpl.java
-import com.shengdingbox.blog.business.service.SysUserRoleService;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysUserRoleServiceImpl.java
-import com.shengdingbox.blog.persistence.beans.SysUserRole;
-import com.shengdingbox.blog.persistence.mapper.SysUserRoleMapper;
-
 import tk.mybatis.mapper.entity.Example;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 用户角色

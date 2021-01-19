@@ -21,19 +21,9 @@ import org.springframework.util.StringUtils;
 import org.springframework.validation.annotation.Validated;
 
 import com.shengdingbox.blog.business.entity.Article;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/RemoverServiceImpl.java
-import com.shengdingbox.blog.business.entity.Tags;
-import com.shengdingbox.blog.business.entity.User;
-import com.shengdingbox.blog.business.enums.ArticleStatusEnum;
 import com.shengdingbox.blog.business.service.BizArticleService;
 import com.shengdingbox.blog.business.service.BizArticleTagsService;
 import com.shengdingbox.blog.business.service.BizTagsService;
-import com.shengdingbox.blog.business.service.RemoverService;
-=======
-import com.shengdingbox.blog.business.service.BizArticleService;
-import com.shengdingbox.blog.business.service.BizArticleTagsService;
-import com.shengdingbox.blog.business.service.BizTagsService;
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/RemoverServiceImpl.java
 import com.shengdingbox.blog.business.util.ImageDownloadUtil;
 import com.shengdingbox.blog.util.SessionUtil;
 

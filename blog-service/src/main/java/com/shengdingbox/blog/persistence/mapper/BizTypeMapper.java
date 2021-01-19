@@ -1,19 +1,11 @@
 package com.shengdingbox.blog.persistence.mapper;
 
-import java.util.List;
-
 import com.shengdingbox.blog.business.vo.TypeConditionVO;
 import com.shengdingbox.blog.persistence.beans.BizType;
 import com.shengdingbox.blog.plugin.BaseMapper;
 import org.springframework.stereotype.Repository;
 
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/BizTypeMapper.java
-import com.shengdingbox.blog.business.vo.TypeConditionVO;
-import com.shengdingbox.blog.persistence.beans.BizType;
-import com.shengdingbox.blog.plugin.BaseMapper;
-
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/BizTypeMapper.java
+import java.util.List;
 /**
  * 
  * @author Dabao (17611555590@163.com)

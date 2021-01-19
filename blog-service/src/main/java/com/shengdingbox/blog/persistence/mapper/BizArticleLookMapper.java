@@ -1,16 +1,12 @@
 package com.shengdingbox.blog.persistence.mapper;
 
-import java.util.List;
-
+import com.shengdingbox.blog.business.vo.ArticleLookConditionVO;
+import com.shengdingbox.blog.persistence.beans.BizArticleLook;
 import com.shengdingbox.blog.plugin.BaseMapper;
 import org.springframework.stereotype.Repository;
 
-import com.shengdingbox.blog.business.vo.ArticleLookConditionVO;
-import com.shengdingbox.blog.persistence.beans.BizArticleLook;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/BizArticleLookMapper.java
-import com.shengdingbox.blog.plugin.BaseMapper;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/persistence/mapper/BizArticleLookMapper.java
+import java.util.List;
+
 
 /**
  * 

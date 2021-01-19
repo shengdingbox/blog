@@ -1,5 +1,16 @@
 package com.shengdingbox.blog.business.util;
 
+import com.shengdingbox.blog.business.consts.HttpConsts;
+import com.shengdingbox.blog.util.HtmlUtil;
+import com.shengdingbox.blog.util.RestClientUtil;
+import lombok.extern.slf4j.Slf4j;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.springframework.http.HttpMethod;
+import org.springframework.util.StringUtils;
+
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -8,23 +19,6 @@ import java.net.URL;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.shengdingbox.blog.business.consts.HttpConsts;
-import com.shengdingbox.blog.util.HtmlUtil;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-import org.springframework.http.HttpMethod;
-import org.springframework.util.StringUtils;
-
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/util/LinksUtil.java
-import com.shengdingbox.blog.business.consts.HttpConsts;
-import com.shengdingbox.blog.util.HtmlUtil;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/util/LinksUtil.java
-import com.shengdingbox.blog.util.RestClientUtil;
-
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 友情链接工具类

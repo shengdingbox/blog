@@ -25,21 +25,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/MailServiceImpl.java
-import com.shengdingbox.blog.business.entity.Comment;
-import com.shengdingbox.blog.business.entity.Link;
-import com.shengdingbox.blog.business.entity.MailDetail;
-import com.shengdingbox.blog.business.entity.Template;
-import com.shengdingbox.blog.business.enums.ConfigKeyEnum;
 import com.shengdingbox.blog.business.enums.TemplateKeyEnum;
-import com.shengdingbox.blog.business.service.MailService;
-import com.shengdingbox.blog.business.service.SysConfigService;
-import com.shengdingbox.blog.business.service.SysTemplateService;
-import com.shengdingbox.blog.util.FreeMarkerUtil;
-=======
-import com.shengdingbox.blog.business.enums.TemplateKeyEnum;
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/MailServiceImpl.java
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -9,10 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
 import com.shengdingbox.blog.business.entity.ArticleLook;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleLookServiceImpl.java
-import com.shengdingbox.blog.business.service.BizArticleLookService;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/BizArticleLookServiceImpl.java
 import com.shengdingbox.blog.persistence.mapper.BizArticleLookMapper;
 
 /**

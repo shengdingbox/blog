@@ -1,22 +1,14 @@
 package com.shengdingbox.blog.business.util;
 
+import com.shengdingbox.blog.framework.exception.DaoBaoCommentException;
+import com.shengdingbox.blog.util.RestClientUtil;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.util.StringUtils;
+
+import javax.net.ssl.HttpsURLConnection;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.util.Date;
-
-import javax.net.ssl.HttpsURLConnection;
-
-import com.shengdingbox.blog.framework.exception.DaoBaoCommentException;
-import com.shengdingbox.blog.util.RestClientUtil;
-import org.springframework.util.StringUtils;
-
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/util/BaiduPushUtil.java
-import com.shengdingbox.blog.framework.exception.DaoBaoCommentException;
-import com.shengdingbox.blog.util.RestClientUtil;
-
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/util/BaiduPushUtil.java
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 百度站长推送工具类

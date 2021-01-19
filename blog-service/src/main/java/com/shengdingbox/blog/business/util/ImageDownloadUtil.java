@@ -1,36 +1,21 @@
 package com.shengdingbox.blog.business.util;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.UUID;
-
 import com.shengdingbox.blog.business.enums.FileUploadType;
 import com.shengdingbox.blog.entity.VirtualFile;
 import com.shengdingbox.blog.exception.GlobalFileException;
 import com.shengdingbox.blog.plugin.file.GlobalFileUploader;
 import com.shengdingbox.blog.util.FileClient.FileUploader;
 import com.shengdingbox.blog.util.FileUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/util/ImageDownloadUtil.java
-import com.shengdingbox.blog.business.enums.FileUploadType;
-import com.shengdingbox.blog.entity.VirtualFile;
-import com.shengdingbox.blog.exception.GlobalFileException;
-import com.shengdingbox.blog.plugin.file.GlobalFileUploader;
-import com.shengdingbox.blog.util.FileUtil;
-import com.shengdingbox.blog.util.FileClient.FileUploader;
+import java.io.*;
+import java.util.UUID;
 
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/util/ImageDownloadUtil.java
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class ImageDownloadUtil {

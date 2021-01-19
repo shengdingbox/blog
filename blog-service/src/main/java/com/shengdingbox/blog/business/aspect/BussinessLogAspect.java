@@ -1,8 +1,11 @@
 package com.shengdingbox.blog.business.aspect;
 
-import java.lang.reflect.Method;
-
+import com.shengdingbox.blog.business.annotation.BussinessLog;
 import com.shengdingbox.blog.business.enums.PlatformEnum;
+import com.shengdingbox.blog.business.service.SysLogService;
+import com.shengdingbox.blog.util.AspectUtil;
+import com.shengdingbox.blog.util.RequestUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -10,16 +13,8 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.shengdingbox.blog.business.annotation.BussinessLog;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/aspect/BussinessLogAspect.java
-import com.shengdingbox.blog.business.enums.PlatformEnum;
-=======
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/aspect/BussinessLogAspect.java
-import com.shengdingbox.blog.business.service.SysLogService;
-import com.shengdingbox.blog.util.AspectUtil;
-import com.shengdingbox.blog.util.RequestUtil;
+import java.lang.reflect.Method;
 
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * AOP切面记录日志

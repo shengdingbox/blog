@@ -1,10 +1,9 @@
 package com.shengdingbox.blog.persistence.mapper;
 
-import java.util.List;
-
+import com.shengdingbox.blog.persistence.beans.BizArticleArchives;
 import org.springframework.stereotype.Repository;
 
-import com.shengdingbox.blog.persistence.beans.BizArticleArchives;
+import java.util.List;
 
 /**
  * 

@@ -1,12 +1,10 @@
 package com.shengdingbox.blog.business.service.impl;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.shengdingbox.blog.business.entity.Role;
 import com.shengdingbox.blog.business.service.SysRoleService;
+import com.shengdingbox.blog.business.vo.RoleConditionVO;
 import com.shengdingbox.blog.persistence.beans.SysRole;
 import com.shengdingbox.blog.persistence.mapper.SysRoleMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,17 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.shengdingbox.blog.business.entity.Role;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysRoleServiceImpl.java
-import com.shengdingbox.blog.business.service.SysRoleService;
-import com.shengdingbox.blog.business.vo.RoleConditionVO;
-import com.shengdingbox.blog.persistence.beans.SysRole;
-import com.shengdingbox.blog.persistence.mapper.SysRoleMapper;
-=======
-import com.shengdingbox.blog.business.vo.RoleConditionVO;
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysRoleServiceImpl.java
+import java.util.*;
 
 /**
  * 角色

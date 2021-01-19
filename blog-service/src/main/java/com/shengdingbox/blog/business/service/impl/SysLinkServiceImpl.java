@@ -1,21 +1,22 @@
 package com.shengdingbox.blog.business.service.impl;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.shengdingbox.blog.business.annotation.RedisCache;
 import com.shengdingbox.blog.business.entity.Link;
 import com.shengdingbox.blog.business.enums.ConfigKeyEnum;
+import com.shengdingbox.blog.business.enums.LinkSourceEnum;
+import com.shengdingbox.blog.business.enums.TemplateKeyEnum;
 import com.shengdingbox.blog.business.service.MailService;
 import com.shengdingbox.blog.business.service.SysConfigService;
 import com.shengdingbox.blog.business.service.SysLinkService;
+import com.shengdingbox.blog.business.util.LinksUtil;
 import com.shengdingbox.blog.business.vo.LinkConditionVO;
 import com.shengdingbox.blog.framework.exception.DabaoLinkException;
+import com.shengdingbox.blog.persistence.beans.SysLink;
 import com.shengdingbox.blog.persistence.mapper.SysLinkMapper;
 import com.shengdingbox.blog.util.HtmlUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,31 +24,8 @@ import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-<<<<<<< HEAD:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysLinkServiceImpl.java
-import com.shengdingbox.blog.business.annotation.RedisCache;
-import com.shengdingbox.blog.business.entity.Link;
-import com.shengdingbox.blog.business.enums.ConfigKeyEnum;
-import com.shengdingbox.blog.business.enums.LinkSourceEnum;
-import com.shengdingbox.blog.business.enums.TemplateKeyEnum;
-import com.shengdingbox.blog.business.service.MailService;
-import com.shengdingbox.blog.business.service.SysConfigService;
-import com.shengdingbox.blog.business.service.SysLinkService;
-import com.shengdingbox.blog.business.util.LinksUtil;
-import com.shengdingbox.blog.business.vo.LinkConditionVO;
-import com.shengdingbox.blog.framework.exception.DabaoLinkException;
-import com.shengdingbox.blog.persistence.beans.SysLink;
-import com.shengdingbox.blog.persistence.mapper.SysLinkMapper;
-import com.shengdingbox.blog.util.HtmlUtil;
-=======
-import com.shengdingbox.blog.business.enums.LinkSourceEnum;
-import com.shengdingbox.blog.business.enums.TemplateKeyEnum;
-import com.shengdingbox.blog.business.util.LinksUtil;
-import com.shengdingbox.blog.persistence.beans.SysLink;
->>>>>>> origin/origin:blog-service/src/main/java/com/shengdingbox/blog/business/service/impl/SysLinkServiceImpl.java
+import java.util.*;
 
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 友情链接
