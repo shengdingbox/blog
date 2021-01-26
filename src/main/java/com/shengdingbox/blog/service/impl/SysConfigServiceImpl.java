@@ -13,8 +13,8 @@ import com.shengdingbox.blog.service.SysConfigService;
 import com.zhouzifei.tool.annotation.RedisCache;
 import com.zhouzifei.tool.consts.DateConst;
 import com.zhouzifei.tool.entity.VirtualFile;
-import com.zhouzifei.tool.plugin.GlobalFileUploader;
-import com.zhouzifei.tool.util.FileClient.FileUploader;
+import com.zhouzifei.tool.media.images.GlobalFileUploader;
+import com.zhouzifei.tool.media.images.service.FileUploader;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -88,8 +88,9 @@ public class SysConfigServiceImpl implements SysConfigService {
         }
         if (file != null) {
             Map<String, Object> configs = sysConfigService.getConfigs();
+            String storageType = (String) configs.get(ConfigKeyEnum.STORAGE_TYPE.getKey());
             FileUploader uploader = new GlobalFileUploader();
-            VirtualFile virtualFile = uploader.upload(file, FileUploadType.QRCODE.getPath(), configs);
+            VirtualFile virtualFile = uploader.upload(file, FileUploadType.QRCODE.getPath(), storageType);
             this.saveConfig(key, virtualFile.getFullFilePath());
         }
     }
