@@ -7,7 +7,9 @@ import com.shengdingbox.blog.entity.User;
 import com.shengdingbox.blog.enums.ArticleStatusEnum;
 import com.shengdingbox.blog.service.*;
 import com.shengdingbox.blog.utils.SessionUtil;
+import com.zhouzifei.tool.config.properties.FileProperties;
 import com.zhouzifei.tool.util.ImageDownloadUtil;
+import com.zhouzifei.tool.util.media.images.ImageDownloadUtil;
 import me.zhyd.hunter.Hunter;
 import me.zhyd.hunter.config.HunterConfig;
 import me.zhyd.hunter.entity.ImageLink;
@@ -46,6 +48,8 @@ public class RemoverServiceImpl implements RemoverService {
     private BizArticleTagsService articleTagsService;
     @Autowired
     SysConfigService sysConfigService;
+    @Autowired
+    FileProperties fileProperties;
 
     @Transactional(rollbackFor = Exception.class)
     @Override
@@ -172,6 +176,7 @@ public class RemoverServiceImpl implements RemoverService {
                 String resImgPath = null;
                 try {
                     Map<String, Object> configs = sysConfigService.getConfigs();
+
                     resImgPath = ImageDownloadUtil.saveToCloudStorage(imageLink.getSrcLink(), source,configs);
                     if (StringUtils.isEmpty(resImgPath)) {
                         writerUtil.print("图片转存失败，请确保云存储已经配置完毕！请查看控制台详细错误信息...");

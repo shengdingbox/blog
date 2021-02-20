@@ -11,7 +11,7 @@ import com.shengdingbox.blog.service.SysConfigService;
 import com.shengdingbox.blog.vo.FileConditionVO;
 import com.zhouzifei.tool.exception.GlobalFileException;
 import com.zhouzifei.tool.plugin.GlobalFileUploader;
-import com.zhouzifei.tool.util.FileClient.FileUploader;
+import com.zhouzifei.tool.util.media.images.service.FileUploader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

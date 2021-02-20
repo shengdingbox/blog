@@ -30,8 +30,8 @@
         </dependency>
         <dependency>
             <groupId>com.zhouzifei</groupId>
-            <artifactId>common-tool</artifactId>
-            <version>1.0.1.RELEASE</version>
+            <artifactId>commonTool</artifactId>
+            <version>1.0.3.BASE</version>
         </dependency>
         <dependency>
             <groupId>tk.mybatis</groupId>
