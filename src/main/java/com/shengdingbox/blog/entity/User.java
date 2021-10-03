@@ -1,10 +1,10 @@
 package com.shengdingbox.blog.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.shengdingbox.blog.dto.AbstractDTO;
 import com.shengdingbox.blog.enums.*;
 import com.shengdingbox.blog.persistence.beans.SysUser;
-import com.zhouzifei.tool.dto.AbstractBO;
-import com.zhouzifei.tool.util.PasswordUtil;
+import com.zhouzifei.tool.html.encryption.PasswordUtil;
 import org.springframework.util.StringUtils;
 
 import java.util.Date;
@@ -18,7 +18,7 @@ import java.util.Date;
  * @date 2019年7月16日
  * @since 1.0
  */
-public class User extends AbstractBO {
+public class User extends AbstractDTO {
     private SysUser sysUser;
 
     public User() {

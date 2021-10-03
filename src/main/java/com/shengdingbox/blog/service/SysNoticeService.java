@@ -4,7 +4,6 @@ package com.shengdingbox.blog.service;
 import com.github.pagehelper.PageInfo;
 import com.shengdingbox.blog.entity.Notice;
 import com.shengdingbox.blog.vo.NoticeConditionVO;
-import com.zhouzifei.tool.dto.AbstractService;
 import com.zhouzifei.tool.dto.SysNoticeDTO;
 
 import java.util.List;

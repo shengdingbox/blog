@@ -14,8 +14,8 @@ import com.shengdingbox.blog.vo.UserConditionVO;
 import com.zhouzifei.tool.exception.ServiceException;
 import com.zhouzifei.tool.exception.CommentException;
 import com.zhouzifei.tool.holder.RequestHolder;
-import com.zhouzifei.tool.util.IpUtil;
-import com.zhouzifei.tool.util.PasswordUtil;
+import com.zhouzifei.tool.html.IpUtil;
+import com.zhouzifei.tool.html.encryption.PasswordUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -47,7 +47,7 @@ public class SysUserServiceImpl implements SysUserService {
         Assert.notNull(user, "User不可为空！");
         user.setUpdateTime(new Date());
         user.setCreateTime(new Date());
-        user.setRegIp(IpUtil.getIpAddr(RequestHolder.getRequest()));
+        user.setRegIp(IpUtil.getIpAddress(RequestHolder.getRequest()));
         user.setPrivacy(UserPrivacyEnum.PUBLIC.getCode());
         user.setNotification(UserNotificationEnum.DETAIL);
         user.setStatus(UserStatusEnum.NORMAL.getCode());
@@ -60,7 +60,7 @@ public class SysUserServiceImpl implements SysUserService {
     public void insertList(List<User> users) {
         Assert.notNull(users, "Users不可为空！");
         List<SysUser> sysUsers = new ArrayList<>();
-        String regIp = IpUtil.getIpAddr(RequestHolder.getRequest());
+        String regIp = IpUtil.getIpAddress(RequestHolder.getRequest());
         for (User user : users) {
             user.setUpdateTime(new Date());
             user.setCreateTime(new Date());
@@ -144,7 +144,7 @@ public class SysUserServiceImpl implements SysUserService {
         if (user != null) {
             user.setLoginCount(user.getLoginCount() + 1);
             user.setLastLoginTime(new Date());
-            user.setLastLoginIp(IpUtil.getIpAddr(RequestHolder.getRequest()));
+            user.setLastLoginIp(IpUtil.getIpAddress(RequestHolder.getRequest()));
             user.setPassword(null);
             this.updateSelective(user);
         }

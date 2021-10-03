@@ -4,9 +4,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.shengdingbox.blog.entity.User;
+import com.shengdingbox.blog.enums.SessionEnum;
 import com.shengdingbox.blog.service.SysUserService;
-import com.zhouzifei.tool.consts.SessionConst;
-import com.zhouzifei.tool.util.PasswordUtil;
+import com.zhouzifei.tool.html.encryption.PasswordUtil;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.session.Session;
@@ -40,7 +40,7 @@ public class RememberAuthenticationInterceptor implements HandlerInterceptor {
             return true;
         }
         Session session = subject.getSession(true);
-        if (session.getAttribute(SessionConst.USER_SESSION_KEY) != null) {
+        if (session.getAttribute(SessionEnum.USER_SESSION_KEY) != null) {
             return true;
         }
         if(!subject.isRemembered()) {
@@ -53,7 +53,7 @@ public class RememberAuthenticationInterceptor implements HandlerInterceptor {
             User user = userService.getByPrimaryKey(userId);
             UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(), PasswordUtil.decrypt(user.getPassword(), user.getUsername()), true);
             subject.login(token);
-            session.setAttribute(SessionConst.USER_SESSION_KEY, user);
+            session.setAttribute(SessionEnum.USER_SESSION_KEY, user);
             log.info("[{}] - 已自动登录", user.getUsername());
         } catch (Exception e) {
             log.error("自动登录失败", e);

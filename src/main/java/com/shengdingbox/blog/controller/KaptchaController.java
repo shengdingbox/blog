@@ -2,8 +2,8 @@ package com.shengdingbox.blog.controller;
 
 import javax.servlet.http.HttpServletResponse;
 
-import com.zhouzifei.tool.plugin.Captcha;
-import com.zhouzifei.tool.plugin.GifCaptcha;
+import com.zhouzifei.tool.html.verification.Captcha;
+import com.zhouzifei.tool.html.verification.GifCaptcha;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

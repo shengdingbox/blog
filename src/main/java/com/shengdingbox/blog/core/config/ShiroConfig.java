@@ -6,7 +6,6 @@ import com.shengdingbox.blog.core.shiro.ShiroService;
 import com.shengdingbox.blog.core.shiro.credentials.RetryLimitCredentialsMatcher;
 import com.shengdingbox.blog.properties.RedisProperties;
 import com.shengdingbox.blog.properties.ShiroProperties;
-import com.zhouzifei.tool.holder.CustomRedisManager;
 import org.apache.shiro.codec.Base64;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
@@ -16,9 +15,6 @@ import org.apache.shiro.web.mgt.CookieRememberMeManager;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
-import org.crazycake.shiro.RedisCacheManager;
-import org.crazycake.shiro.RedisManager;
-import org.crazycake.shiro.RedisSessionDAO;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -29,6 +25,7 @@ import org.springframework.context.annotation.DependsOn;
 import org.springframework.core.annotation.Order;
 
 import com.shengdingbox.blog.core.shiro.realm.ShiroRealm;
+import org.springframework.data.redis.cache.RedisCacheManager;
 
 /**
  * Shiro配置类

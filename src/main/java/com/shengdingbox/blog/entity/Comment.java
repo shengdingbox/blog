@@ -6,7 +6,7 @@ import com.shengdingbox.blog.enums.CommentStatusEnum;
 import com.shengdingbox.blog.enums.ExtraCommentTypeEnum;
 import com.shengdingbox.blog.persistence.beans.BizArticle;
 import com.shengdingbox.blog.persistence.beans.BizComment;
-import com.zhouzifei.tool.util.HtmlUtil;
+import com.zhouzifei.tool.html.seo.HtmlUtil;
 import org.springframework.util.StringUtils;
 
 import java.util.Date;

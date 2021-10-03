@@ -5,7 +5,6 @@ import com.github.pagehelper.PageInfo;
 import com.shengdingbox.blog.entity.User;
 import com.shengdingbox.blog.entity.UserPwd;
 import com.shengdingbox.blog.vo.UserConditionVO;
-import com.zhouzifei.tool.dto.AbstractService;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

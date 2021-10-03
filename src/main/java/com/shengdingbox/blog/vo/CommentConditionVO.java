@@ -1,6 +1,5 @@
 package com.shengdingbox.blog.vo;
 
-import com.zhouzifei.tool.dto.BaseConditionVO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

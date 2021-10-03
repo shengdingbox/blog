@@ -1,7 +1,6 @@
 package com.shengdingbox.blog.core.shiro.credentials;
 
-
-import com.zhouzifei.tool.util.PasswordUtil;
+import com.zhouzifei.tool.html.encryption.PasswordUtil;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.UsernamePasswordToken;
